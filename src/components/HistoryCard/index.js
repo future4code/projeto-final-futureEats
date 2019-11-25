@@ -64,9 +64,9 @@ function HistoryCard() {
     return (
         <StyledCard>
             <StyledCardContent >
-                <StyledTypographyRestaurantTitle>Restaurante</StyledTypographyRestaurantTitle>
-                <StyledTypographyData>data </StyledTypographyData>
-                <StyledTypographySubtotal>Subtotal R$00,00</StyledTypographySubtotal>
+                <StyledTypographyRestaurantTitle>{props.restaurantName}</StyledTypographyRestaurantTitle>
+                <StyledTypographyData>{props.period}</StyledTypographyData>
+                <StyledTypographySubtotal>Subtotal R${props.value}</StyledTypographySubtotal>
             </StyledCardContent>
         </StyledCard>
     );
