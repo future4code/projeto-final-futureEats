@@ -60,7 +60,6 @@ const StyledTypographySubtotal = styled(Typography)`
     color: #000000;
 `
 
-
 function HistoryCard() {
     return (
         <StyledCard>

@@ -40,7 +40,6 @@ export const App = () => (
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Router history={history} />
-        <HistoryCard />
       </MuiThemeProvider>
     </JssProvider>
   </Provider>
