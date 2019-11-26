@@ -2,14 +2,21 @@ import React from "react";
 import { ConnectedRouter } from "connected-react-router";
 import { Switch, Route } from "react-router-dom";
 import SearchBar from "../../components/SearchBar/SearchBar";
+import AddressFormPage from '../../components/AddressFormPage';
 
-export const routes = {};
+export const routes = {
+  feedPage: "/addressform",
+  addressFormPage: "/addressform",
+};
+
+
 
 function Router(props) {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
-        <Route path={routes.root} component={() => <SearchBar />} />
+        <Route path={routes.addressFormPage} component={() => <AddressFormPage />} />
+        <Route path={routes.feedPage} component={() => <AddressFormPage />} />
       </Switch>
     </ConnectedRouter>
   );

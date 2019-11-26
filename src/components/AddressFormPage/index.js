@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import styled from 'styled-components';
@@ -7,12 +7,14 @@ import 'typeface-roboto';
 import { connect } from "react-redux";
 import { push } from "connected-react-router";
 import { routes } from '../../containers/Router';
+import { createAddress } from '../../actions/addressForm';
 
 const StyledContainer = styled.div`
     display:flex;
     flex-direction:column;
-    width: 360px;
-    align-items:center;
+    width: 100vw;
+    justify-content:center;
+    align-Items: center;
 `
 
 const Title = styled.div`
@@ -80,7 +82,26 @@ const StyledTextField = styled(TextField)`
     margin:8px 16px 8px 16px;
 `
 
-const AddressFormPage = () => {
+const AddressFormPage = (props) => {
+
+    const [logradouro, setLogradouro] = useState("");
+    const [numero, setNumero] = useState("");
+    const [complemento, setComplemento] = useState("");
+    const [bairro, setBairro] = useState("");
+    const [cidade, setCidade] = useState("");
+    const [estado, setEstado] = useState("");
+
+    const onSubmitFormAddress = (event) => {
+        event.preventDefault()
+        props.submitForm(logradouro, numero, bairro, cidade, estado, complemento)
+        setLogradouro("")
+        setNumero("")
+        setComplemento("")
+        setBairro("")
+        setCidade("")
+        setEstado("")
+    }
+
     return (
         <StyledContainer>
             <Title>
@@ -88,7 +109,7 @@ const AddressFormPage = () => {
                     Meu endereço
                 </Text>
             </Title>
-            <StyledForm >
+            <StyledForm onSubmit={onSubmitFormAddress}>
                 <StyledBoxTextField>
                     <StyledTextField
                         type="text"
@@ -101,6 +122,8 @@ const AddressFormPage = () => {
                         InputLabelProps={{
                             shrink: true,
                         }}
+                        value={logradouro}
+                        onChange={(event)=> setLogradouro(event.target.value)}
                     />
                 </StyledBoxTextField>
                 <StyledBoxTextField>
@@ -115,6 +138,8 @@ const AddressFormPage = () => {
                         InputLabelProps={{
                             shrink: true,
                         }}
+                        value={numero}
+                        onChange={(event)=> setNumero(event.target.value)}
                     />
                 </StyledBoxTextField>
                 <StyledBoxTextField>
@@ -128,6 +153,8 @@ const AddressFormPage = () => {
                         InputLabelProps={{
                             shrink: true,
                         }}
+                        value={complemento}
+                        onChange={(event)=>setComplemento(event.target.value)}
                     />
                 </StyledBoxTextField>
                 <StyledBoxTextField>
@@ -142,6 +169,8 @@ const AddressFormPage = () => {
                         InputLabelProps={{
                             shrink: true,
                         }}
+                        value={bairro}
+                        onChange={(event)=>setBairro(event.target.value)}
                     />
                 </StyledBoxTextField>
                 <StyledBoxTextField>
@@ -156,6 +185,8 @@ const AddressFormPage = () => {
                         InputLabelProps={{
                             shrink: true,
                         }}
+                        value={cidade}
+                        onChange={(event)=>setCidade(event.target.value)}
                     />
                 </StyledBoxTextField>
                 <StyledBoxTextField>
@@ -170,6 +201,8 @@ const AddressFormPage = () => {
                         InputLabelProps={{
                             shrink: true,
                         }}
+                        value={estado}
+                        onChange={(event)=>setEstado(event.target.value)}
                     />
                 </StyledBoxTextField>
                 <StyledBoxButton>
@@ -185,4 +218,10 @@ const AddressFormPage = () => {
     );
 }
 
-export default connect()(AddressFormPage);
+function mapDispatchToProps(dispatch) {
+    return ({
+        submitForm: (logradouro, numero, bairro, cidade, estado, complento) => dispatch(createAddress(logradouro, numero, bairro, cidade, estado, complento))
+    })
+}
+
+export default connect(null, mapDispatchToProps)(AddressFormPage);
