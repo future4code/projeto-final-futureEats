@@ -4,8 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
-import PropTypes from 'prop-types';
-
 
 const StyledCard = styled(Card)`
     margin-top:8px;
@@ -21,8 +19,10 @@ const StyledCardContent = styled(CardContent)`
     height: 102px;
     display:flex;
     flex-direction:column;
-    justify-content: space-around;
-    padding:16px ;
+    && 
+    {
+        padding-bottom:16px;
+    }
 `
 
 const StyledTypographyRestaurantTitle = styled(Typography)`
@@ -36,6 +36,7 @@ const StyledTypographyRestaurantTitle = styled(Typography)`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #5cb646;
+    padding:16px 16px 68px 16px;
 `
 
 const StyledTypographyData = styled(Typography)`
