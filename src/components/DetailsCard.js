@@ -1,9 +1,9 @@
 import React from "react"
 import styled from 'styled-components'
-import Roboto from "typeface-roboto"
+import "typeface-roboto"
 
 const MainContainer = styled.div`
-    height: 246px;
+    //height: 246px;
 `
 
 const Container = styled.div`
@@ -15,7 +15,7 @@ const Container = styled.div`
 const ImgStyled = styled.img`
     width: 328px;
     height: 120px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 8px 8px 0  0;
 `
 const Restaurant = styled.p`
@@ -92,18 +92,28 @@ const Address = styled.p`
     color: #b8b8b8;
     margin-top: 0px;
 `
-
+const mockRestaurantDetails = {
+  restaurant: {
+    description: "Habib's é uma rede de restaurantes de comida rápida brasileira especializada em culinária árabe, os restaurantes vendem mais de 600 milhões de esfirras por ano. A empresa emprega 22 mil colaboradores e tem 421 unidades distribuídas em mais de cem municípios em 20 unidades federativas.",
+    shipping: 6,
+    address: "Rua das Margaridas, 110 - Jardim das Flores",
+    name: "Habibs",
+    logoUrl: "http://soter.ninja/futureFoods/logos/habibs.jpg",
+    deliveryTime: 60,
+    category: "Árabe"
+  }
+}
 const DetailsCard = (props) => {
     return(
         <MainContainer>
-            <ImgStyled src={props.img}/>
-            <Restaurant>{props.name}</Restaurant>
-            <Category>{props.category}</Category>
+            <ImgStyled src={mockRestaurantDetails.restaurant.logoUrl}/>
+            <Restaurant>{mockRestaurantDetails.restaurant.name}</Restaurant>
+            <Category>{mockRestaurantDetails.restaurant.category}</Category>
             <Container>
-                <DeliveryTime>{props.time} min</DeliveryTime>
-                <Shipping>Frete R${props.fret},00</Shipping>
+                <DeliveryTime>{mockRestaurantDetails.restaurant.deliveryTime} min</DeliveryTime>
+                <Shipping>Frete R${mockRestaurantDetails.restaurant.shipping},00</Shipping>
             </Container>
-            <Address>{props.address}</Address>
+            <Address>{mockRestaurantDetails.restaurant.address}</Address>
         </MainContainer>
     )
 }
