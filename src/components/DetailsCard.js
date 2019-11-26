@@ -1,10 +1,11 @@
 import React from "react"
 import styled from 'styled-components'
 
-const MainContnainer = styled.div`
+const MainContainer = styled.div`
+    height: 246px;
 `
 
-const Contnainer = styled.div`
+const Container = styled.div`
     display: flex;
     margin: 0px;
     padding: 0px;
@@ -13,10 +14,10 @@ const Contnainer = styled.div`
 const ImgStyled = styled.img`
     width: 328px;
     height: 120px;
-    object-fit: couver;
+    object-fit: cover;
     border-radius: 8px 8px 0  0;
 `
-const Restalrante = styled.p`
+const Restaurant = styled.p`
     width: 328px;
     height: 18px;
     font-family: Roboto;
@@ -93,16 +94,16 @@ const Address = styled.p`
 
 const DetailsCard = (props) => {
     return(
-        <MainContnainer>
+        <MainContainer>
             <ImgStyled src={props.img}/>
-            <Restalrante>{props.name}</Restalrante>
+            <Restaurant>{props.name}</Restaurant>
             <Category>{props.category}</Category>
-            <Contnainer>
+            <Container>
                 <DeliveryTime>{props.time} min</DeliveryTime>
                 <Shipping>Frete R${props.fret},00</Shipping>
-            </Contnainer>
+            </Container>
             <Address>{props.address}</Address>
-        </MainContnainer>
+        </MainContainer>
     )
 }
 
