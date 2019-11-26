@@ -17,7 +17,6 @@ import { generateReducers } from "../../reducers";
 import { routerMiddleware } from "connected-react-router";
 import OpeningPage from "../../components/openingPage";
 
-
 const generateClassName = createGenerateClassName();
 const jss = create({
   ...jssPreset(),
