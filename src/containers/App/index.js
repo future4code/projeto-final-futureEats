@@ -15,6 +15,7 @@ import { createBrowserHistory } from "history";
 import { createStore, applyMiddleware, compose } from "redux";
 import { generateReducers } from "../../reducers";
 import { routerMiddleware } from "connected-react-router";
+import RestaurantCard from "../../components/restaurantCard";
 
 const generateClassName = createGenerateClassName();
 const jss = create({
@@ -40,6 +41,7 @@ export const App = () => (
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Router history={history} />
+        <RestaurantCard img="http://soter.ninja/futureFoods/logos/habibs.jpg" name="Habibs" time={60} fret={6} />
       </MuiThemeProvider>
     </JssProvider>
   </Provider>
