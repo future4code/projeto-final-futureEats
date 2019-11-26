@@ -3,11 +3,15 @@ import styled from 'styled-components';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import 'typeface-roboto';
+import PropTypes from 'prop-types';
 
-const StyledCard= styled(Card)`
+
+const StyledCard = styled(Card)`
     margin-top:8px;
     width: 328px;
     height: 102px;
+    border-radius:8px;
 `
 
 const StyledCardContent = styled(CardContent)`
@@ -59,14 +63,22 @@ const StyledTypographySubtotal = styled(Typography)`
     letter-spacing: -0.39px;
     color: #000000;
 `
+const mockHistoryDetails = {
+    product: {
+        id: "CnKdjU6CyKakQDGHzNln",
+        period: "21 de Setembro de 2019",
+        value: "10.00",
+        restaurantName: "Habbib's",
+    }
+};
 
-function HistoryCard() {
+const HistoryCard = (props) => {
     return (
         <StyledCard>
             <StyledCardContent >
-                <StyledTypographyRestaurantTitle>{props.restaurantName}</StyledTypographyRestaurantTitle>
-                <StyledTypographyData>{props.period}</StyledTypographyData>
-                <StyledTypographySubtotal>Subtotal R${props.value}</StyledTypographySubtotal>
+                <StyledTypographyRestaurantTitle>{mockHistoryDetails.product.restaurantName}</StyledTypographyRestaurantTitle>
+                <StyledTypographyData>{mockHistoryDetails.product.period}</StyledTypographyData>
+                <StyledTypographySubtotal>Subtotal R${mockHistoryDetails.product.value}</StyledTypographySubtotal>
             </StyledCardContent>
         </StyledCard>
     );
