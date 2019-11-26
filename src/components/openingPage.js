@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { connect } from "react-redux"
 import { push } from "connected-react-router"
 
+
 const Main = styled.div`
     background-color: #000000
     display: grid;
@@ -17,7 +18,6 @@ const ImgLogo = styled.img`
     height: 65px;
     object-fit: contain;
 `
-
 
 const OpeningPage = (props) => {
     useEffect( ()=>{ setTime()},[])
@@ -38,3 +38,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(null, mapDispatchToProps)(OpeningPage)
+
