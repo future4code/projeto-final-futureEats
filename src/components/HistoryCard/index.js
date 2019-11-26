@@ -21,8 +21,9 @@ const StyledCardContent = styled(CardContent)`
     flex-direction:column;
     && 
     {
-        padding-bottom:16px;
+        padding-bottom:0px;
     }
+    padding: 0;
 `
 
 const StyledTypographyRestaurantTitle = styled(Typography)`
@@ -36,7 +37,7 @@ const StyledTypographyRestaurantTitle = styled(Typography)`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #5cb646;
-    padding:16px 16px 68px 16px;
+    margin:16px 16px 0 16px;
 `
 
 const StyledTypographyData = styled(Typography)`
@@ -50,6 +51,7 @@ const StyledTypographyData = styled(Typography)`
     line-height: normal;
     letter-spacing: -0.29px;
     color: #000000;
+    margin:9px 16px 7px 16px;
 `
 
 const StyledTypographySubtotal = styled(Typography)`
@@ -63,6 +65,7 @@ const StyledTypographySubtotal = styled(Typography)`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #000000;
+    margin:0px 16px 16px 16px;
 `
 const mockHistoryDetails = {
     product: {
