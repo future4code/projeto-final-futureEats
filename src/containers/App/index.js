@@ -41,7 +41,6 @@ export const App = () => (
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Router history={history} />
-        <FoodsCard />
       </MuiThemeProvider>
     </JssProvider>
   </Provider>

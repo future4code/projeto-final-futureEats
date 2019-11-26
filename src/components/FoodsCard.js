@@ -4,6 +4,11 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import 'typeface-roboto';
 
+
+const CardWrapper = styled.div`
+  margin: auto;
+`;
+
 const PaperStyled = styled(Paper)`
   display: flex;
   width: 328px;
@@ -65,10 +70,6 @@ const ImgStyled = styled.img`
   border-radius: 8px 0 0 8px; 
 `;
 
-const CardWrapper = styled.div`
- margin: 20px;
-`;
-
 const Counter = styled.div`
   width: 33px;
   height: 33px;
@@ -78,7 +79,7 @@ const Counter = styled.div`
 `;
 
 const CounterWrapper = styled.div`
- height: 0;
+  height: 0;
 `;
 
 const TitleWrapper = styled.div`
