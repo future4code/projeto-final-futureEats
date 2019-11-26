@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import {
@@ -15,7 +15,8 @@ import { createBrowserHistory } from "history";
 import { createStore, applyMiddleware, compose } from "redux";
 import { generateReducers } from "../../reducers";
 import { routerMiddleware } from "connected-react-router";
-import HistoryCard from '../../components/HistoryCard';
+import OpeningPage from "../../components/openingPage";
+
 const generateClassName = createGenerateClassName();
 const jss = create({
   ...jssPreset(),
@@ -40,7 +41,7 @@ export const App = () => (
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Router history={history} />
-        <HistoryCard />
+        <OpeningPage/>
       </MuiThemeProvider>
     </JssProvider>
   </Provider>
