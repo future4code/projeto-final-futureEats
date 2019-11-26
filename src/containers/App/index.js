@@ -16,6 +16,7 @@ import { createStore, applyMiddleware, compose } from "redux";
 import { generateReducers } from "../../reducers";
 import { routerMiddleware } from "connected-react-router";
 import OpeningPage from "../../components/openingPage";
+import AddressFormPage from "../../components/AddressFormPage";
 
 const generateClassName = createGenerateClassName();
 const jss = create({
@@ -40,8 +41,8 @@ export const App = () => (
     <JssProvider jss={jss} generateClassName={generateClassName}>
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <Router history={history} />
-        <OpeningPage/>
+
+        <AddressFormPage />
       </MuiThemeProvider>
     </JssProvider>
   </Provider>
