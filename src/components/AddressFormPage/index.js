@@ -9,7 +9,7 @@ import { push } from "connected-react-router";
 import { routes } from '../../containers/Router';
 import { createAddress } from '../../actions/addressForm';
 
-const StyledContainer = styled.div`
+export const StyledContainer = styled.div`
     display:flex;
     flex-direction:column;
     width: 100vw;
@@ -17,12 +17,12 @@ const StyledContainer = styled.div`
     align-Items: center;
 `
 
-const Title = styled.div`
+export const Title = styled.div`
     width: 360px;
     height: 42px;
 `
 
-const Text = styled.p`
+export const Text = styled.p`
     width: 296px;
     height: 18px;
     font-family: Roboto;
@@ -37,12 +37,12 @@ const Text = styled.p`
     margin:12px 32px 12px 32px;
 `
 
-const StyledForm = styled.form`
+export const StyledForm = styled.form`
     display:flex;
     flex-direction:column;
 `
 
-const StyledButtonSubmit = styled(Button)`
+export const StyledButtonSubmit = styled(Button)`
     width: 328px;
     height: 42px;
     border-radius: 2px;
@@ -51,7 +51,7 @@ const StyledButtonSubmit = styled(Button)`
     margin: 8px 16px 36px 16px;
 `
 
-const StyledContentButton = styled(Typography)`
+export const StyledContentButton = styled(Typography)`
     width: 296px;
     height: 18px;
     font-family: Roboto;
@@ -66,17 +66,17 @@ const StyledContentButton = styled(Typography)`
     margin:12px 16px 12px 16px;
 `
 
-const StyledBoxTextField = styled.div`
+export const StyledBoxTextField = styled.div`
     width: 360px;
     height: 72px;
 `
 
-const StyledBoxButton = styled.div`
+export const StyledBoxButton = styled.div`
     width: 360px;
     height: 72px;
 `
 
-const StyledTextField = styled(TextField)`
+export const StyledTextField = styled(TextField)`
     width: 328px;
     height: 56px;
     margin:8px 16px 8px 16px;
