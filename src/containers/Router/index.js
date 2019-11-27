@@ -6,14 +6,16 @@ import ProfilePage from "../../components/ProfilePage/ProfilePage";
 
 export const routes = {
   root: "/",
+  login: "/login",
   profilePage: "/profilePage",
 };
 
 function Router(props) {
   return (
     <ConnectedRouter history={props.history}>
-      <Switch> 
+      <Switch>
         <Route path={routes.profilePage} component={() => <ProfilePage />} />
+        <Route path={routes.login} component={() => <div />} />
         <Route path={routes.root} component={() => <OpeningPage />} />       
       </Switch>
     </ConnectedRouter>

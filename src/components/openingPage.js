@@ -35,7 +35,7 @@ export const OpeningPage = (props) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-    gotoLoginPage: () => dispatch(push(routes.profilePage)),
+    gotoLoginPage: () => dispatch(push(routes.login)),
 })
 
 export default connect(null, mapDispatchToProps)(OpeningPage)

@@ -11,6 +11,8 @@ const user = { //mock pra teste
     address: "R. Afonso Braz, 177 - Vila N. Conceição"
 }
 
+const order = null;
+
 const Wrapper = styled.div`
     height: 100vh;
     width: 100vw;    
@@ -107,7 +109,7 @@ function ProfilePage(){
             </StyledRectangle>
             <StyledHistoryTitle>Histórico de Pedidos</StyledHistoryTitle>
             <StyledDivider/>
-            <StyledHistory>Você não realizou nenhum pedido.</StyledHistory>
+            <StyledHistory>{order === null? "Você não realizou nenhum pedido" : order}.</StyledHistory>
         </Wrapper>
     )
 }
