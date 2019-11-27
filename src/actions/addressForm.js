@@ -3,14 +3,14 @@ import { routes } from '../containers/Router';
 import { push } from 'connected-react-router';
 
 
-const setError = (error) => {
+export const setError = (error) => {
     return({
         type: "SET_ERROR",
         payload: error 
     })
 }
 
-const setUser = (user) => {
+export const setUser = (user) => {
     return({
         type: "SET_USER",
         payload: {user: user} 

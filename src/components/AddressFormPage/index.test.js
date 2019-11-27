@@ -1,4 +1,4 @@
-import react from 'ract';
+import react from 'react';
 import { shallow } from 'enzyme';
 import { 
     StyledTextField,
