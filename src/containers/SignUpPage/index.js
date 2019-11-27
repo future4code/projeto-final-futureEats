@@ -11,8 +11,8 @@ import styled from "styled-components";
 import logo from "./logo.png";
 import Button from '@material-ui/core/Button';
 import { createUserAction } from "../../actions/allActions"
+import {cpfMask, emailMask } from "./mask"
  
-
  const FormContainer= styled.form`
     width: 100%;
     height: 100vh;
@@ -21,16 +21,10 @@ import { createUserAction } from "../../actions/allActions"
     justify-items: center;
     display: grid;  
 `
- /*
- display:flex
-  flex-flow: column wrap;
-  */
-
 const TextFieldStyled= styled(TextField)`
   display: grid; 
   width: 100%;
 `
-
 const Pstyled = styled.div`
     margin-left:5vh;
     padding:10px;
@@ -70,8 +64,8 @@ const ButtonCreate= styled.button`
           passwordConfirm: "",
           showPassword :false,
           showPasswordConfirm: false,
-
         }
+        this.handlechange = this.handlechange.bind(this)
       }
       
       handleClickShowPassword = () => {
@@ -82,7 +76,7 @@ const ButtonCreate= styled.button`
         this.setState(state => ({ showPasswordConfirm: !state.showPasswordConfirm }));
       };
     
-      handleChange = prop => event => {
+      handleChange0 = prop => event => {
         this.setState({ [prop]: event.target.value });
       };
  
@@ -97,12 +91,10 @@ const ButtonCreate= styled.button`
           email: event.target.value
         });
       };
-      
-      handleChangeCpf = (event) => {
-        this.setState({
-          cpf: event.target.value
-        });
-      };
+
+      handlechange(e) {
+        this.setState({cpf: cpfMask(e.target.value) })
+      }
 
       handleChangePassword = (event) => {
         this.setState({
@@ -112,20 +104,26 @@ const ButtonCreate= styled.button`
 
       handleSubmit = event => {
         event.preventDefault();
+        if (this.state.name.length < 5) 
+          alert ("Nome deve ter no mínimo 5 caracteres!")
+        if (this.state.email.indexOf("@") === -1 && this.state.email.indexOf(".") === -1 ) {
+          alert("email inválido")
+          }
+        if (this.state.password.length < 6) 
+          alert ("Senha deve ter no mínimo 6 caracteres!")
         if (this.state.password !== this.state.passwordConfirm)
-      alert("Senhas não combinam, preencha de novo")
-      else {
-      this.props.createUser(
-          this.state.name, 
-          this.state.email,
-          this.state.cpf,
-          this.state.password,
-          )
-          alert("Enviado!");
-        }
-      }; 
+          alert("Senhas não combinam, confirme de novo")
+        else {
+          this.props.createUser(
+              this.state.name, 
+              this.state.email,
+              this.state.cpf,
+              this.state.password,
+              )
+            }
+          }; 
 
-
+       
     render(props) {
         const { classes } = this.props;
         return (
@@ -145,9 +143,7 @@ const ButtonCreate= styled.button`
                             margin="normal"
                             variant="outlined"
                             name="name" 
-                            inputProps={{  pattern: "[a-zA-Z]", minlength:"5"  }}
-                            //pattern="^[a-zA-Z]{5,}" 
-                            onChange={this.handleChangeName }
+                            onChange={this.handleChangeName}
                             value={this.state.name}
                         />
                         <TextFieldStyled
@@ -157,8 +153,6 @@ const ButtonCreate= styled.button`
                             margin="normal"
                             variant="outlined"
                             name="email"
-                            //pattern="^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
-                            inputProps={{  pattern: "[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"  }}
                             onChange={this.handleChangeEmail}
                             value={this.state.email}
                         />               
@@ -169,9 +163,8 @@ const ButtonCreate= styled.button`
                             margin="normal"
                             variant="outlined"
                             name="cpf"
-                            //pattern="/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/"
-                            inputProps={{  pattern: "/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/"  }}
-                            onChange={this.handleChangeCpf }
+                           // onChange={this.handleChangeCpf }
+                            onChange={this.handlechange}
                             value={this.state.cpf}
                         />    
                         
@@ -179,9 +172,7 @@ const ButtonCreate= styled.button`
                             value={this.state.password}
                             required
                             name="password"
-                            //pattern="^[a-zA-Z0-9_.-]{6,}"
                             margin="normal"
-                            id="outlined-adornment-password"
                             variant="outlined"
                             type={this.state.showPassword ? 'text' : 'password'}
                             label="Senha"
@@ -199,22 +190,19 @@ const ButtonCreate= styled.button`
                                     </IconButton>
                                 </InputAdornment>
                                 ),
-                                //pattern: "[a-zA-Z0-9_.-]", minlength:"6"
                             }}
                         />
 
                         <TextFieldStyled
                             required
                             name="passwordConfirm"
-                            //pattern="^[a-zA-Z0-9_.-]{6,}"
                             margin="normal"
-                            id="outlined-adornment-passwordConfirm"
                             variant="outlined"
                             type={this.state.showPasswordConfirm ? 'text' : 'password'}
                             label="Senha"
                             placeholder="Mínimo 6 caracteres"
                             value={this.state.passwordConfirm}
-                            onChange={this.handleChange('passwordConfirm')}
+                            onChange={this.handleChange0('passwordConfirm')}
                             InputProps={{
                                 endAdornment: (
                                 <InputAdornment position="end">
@@ -226,7 +214,6 @@ const ButtonCreate= styled.button`
                                     </IconButton>
                                 </InputAdornment>
                                 ),
-                                //pattern: "[a-zA-Z0-9_.-]", minlength:"6"
                             }}
                         />
 
