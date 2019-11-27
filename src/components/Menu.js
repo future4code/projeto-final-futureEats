@@ -44,6 +44,7 @@ onClickProfile = (event) => {
     return (
         
       <BottomNavigation
+        style={{ position: "fixed", bottom: "0", width: "100%" }}
         onChange={this.handleChange}
         showLabels
         value={this.state.value}
