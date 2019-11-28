@@ -1,14 +1,19 @@
 const initialState = {
-    error: ""
-}
+    error: "",
+    user: {}
+};
 
-const login = (state = initialState, action) => {
+export const setTools = (state = initialState, action) => {
     switch (action.type) {
-        case "MESSAGEM_OF_ERROR":
-            return { ...state, error: action.payload }
-        default:
+        case "SET_USER":
+            return ({...state, user:action.payload.user});
+        case "SET_ERROR":
+            return ({...state, error:action.payload});
+        case "ERROR_MESSAGE":
+            return { ...state, error: action.payload };
+          default:
             return state
     }
-}
+};
 
-export default login
+export default login;
