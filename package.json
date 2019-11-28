@@ -24,6 +24,8 @@
     "typeface-roboto": "0.0.75"
   },
   "devDependencies": {
+    "@testing-library/react": "^9.3.2",
+    "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "jest": "^24.7.1",
     "typescript": "3.3.3"

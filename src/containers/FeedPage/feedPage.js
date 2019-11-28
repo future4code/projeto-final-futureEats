@@ -68,7 +68,7 @@ const AppBarStyled = styled(AppBar)`
 `
 
 
-function FeedPage(props) {
+export function FeedPage(props) {
     
     const [categoryState, setCategoryState] = useState(1)
     const [restaurants, setRestaurants] = useState(props.listRestaurants)
@@ -96,14 +96,14 @@ function FeedPage(props) {
                 <SearchBar/>
                 <AppBarStyled position="static" color="default">
                     <Tabs
-                        value="1"
+                        value={1}
                         onChange={handleChange}
-                        indicatorColor="secundary"
-                        textColor="#000000"
+                        indicatorColor="secondary"
+                        textColor="primary"
                         variant="scrollable"
                         scrollButtons="auto"
                     >
-                        <Tab label="Carnes" />
+                        <Tab label="Carnes"  />
                         <Tab label="Italiana" />
                         <Tab label="Hamburguer" />
                         <Tab label="Asiática" />
@@ -114,7 +114,7 @@ function FeedPage(props) {
                         <Tab label="Baiana" />
                     </Tabs>
                 </AppBarStyled>
-                <ContainerList>
+                <ContainerList >
                     {restaurants.map((restaurant) => (<RestaurantCard img={restaurant.logoUrl} 
                                                                             name={restaurant.name} 
                                                                             time={restaurant.deliveryTime} 
