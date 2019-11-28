@@ -73,7 +73,7 @@ const Shipping = styled.p`
 `
 
 
-const RestaurantCard = (props) => {
+export const RestaurantCard = (props) => {
     
     return(
         <MainContainer>

@@ -20,7 +20,7 @@ const ImgLogo = styled.img`
     object-fit: contain;
 `
 
-const OpeningPage = (props) => {
+export const OpeningPage = (props) => {
     useEffect( ()=>{ setTime()},[])
 
     const  setTime = () => {

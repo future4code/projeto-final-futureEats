@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styled from 'styled-components'
 import Roboto from "typeface-roboto"
 import SearchBar from "../../components/SearchBar/SearchBar"
-import Menu from "../../components/Menu"
+import Menu from "../../components/Menu/Menu"
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -114,7 +114,7 @@ export function FeedPage(props) {
                         <Tab label="Baiana" />
                     </Tabs>
                 </AppBarStyled>
-                <ContainerList >
+                <ContainerList>
                     {restaurants.map((restaurant) => (<RestaurantCard img={restaurant.logoUrl} 
                                                                             name={restaurant.name} 
                                                                             time={restaurant.deliveryTime} 
