@@ -16,4 +16,4 @@ export const setTools = (state = initialState, action) => {
     }
 };
 
-export default login;
+export default setTools;
