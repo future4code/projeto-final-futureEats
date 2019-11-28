@@ -3,18 +3,20 @@ import { ConnectedRouter } from "connected-react-router";
 import { Switch, Route } from "react-router-dom";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import routes from "./index"
+import LoginPage from "../LoginPage/LoginPage";
+import {FeedPage} from "../FeedPage/feedPage";
 
 
-const routes = {};
+
 
 function ProtectedRouter(props) {
 
     const token = localStorage.getItem("token")
     
-    let route
+    let route;
     if (token === false){ 
         props.path === "address" ?
-            route = <Route path={routes.login} component={<Login/>} />:
+            route = <Route path={routes.loginPage} component={<LoginPage/>} />:
             route = <Route path={props.path} component={props.component} />
     }
     else{
