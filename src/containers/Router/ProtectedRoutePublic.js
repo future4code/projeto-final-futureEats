@@ -23,16 +23,25 @@ class ProtectedRouterPublic extends Component {
 
         const token =  localStorage.getItem("token");
 
-        const address = localStorage.getItem("address");
-        console.log(token);
-        if (token === null && this.props.path === "address")
-            this.props.gotoLoginPage()
-        else if (token === true && (address === null || address === false))
+        const address = localStorage.getItem("hasAddress");
+
+        
+        {
+
+        if (token === null && this.props.path === routes.addressFormPage ){
+            this.props.gotoLoginPage()}
+        else if (this.props.path === routes.addressFormPage) {
+            return <Route path={this.props.path} component={this.props.component} />
+        }
+        else if (token !== null && (address === null || address === "false") && this.props.path !== routes.addressFormPage){
             this.props.gotoAddressFormPage()
-        else if (token === null)
+            ;}
+       
+        else if (token === null )
             return <Route path={this.props.path} component={this.props.component} />
         else
-            this.props.gotoFeedPage() 
+        
+            this.props.gotoFeedPage() }
     };
 
     render() {
