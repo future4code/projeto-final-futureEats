@@ -7,6 +7,7 @@ import SignUpPage from "../SignUpPage/index"
 import OpeningPage from "../../components/OpeningPage";
 import ProfilePage from "../../components/ProfilePage/ProfilePage";
 import FeedPage from "../FeedPage/feedPage";
+import LoginPage from "../loginPage/loginPage";
 
 
 export const routes = {
@@ -21,8 +22,7 @@ function Router(props) {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
-        <Route path={routes.addressFormPage} component={() => <AddressFormPage />} />
-        <Route path={routes.feedPage} component={() => <AddressFormPage />} />
+        <Route path={routes.root} component={() => <div />} />
       </Switch>
     </ConnectedRouter>
   );
