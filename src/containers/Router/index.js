@@ -2,13 +2,20 @@ import React from "react";
 import { ConnectedRouter } from "connected-react-router";
 import { Switch, Route } from "react-router-dom";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import DetailsPage from "../DetailsPage"
-import {LoginPage} from "../LoginPage";
+import AddressFormPage from '../../components/AddressFormPage';
+import SignUpPage from "../SignUpPage/index"
 import OpeningPage from "../../components/OpeningPage";
+import ProfilePage from "../../components/ProfilePage/ProfilePage";
+import FeedPage from "../FeedPage/feedPage";
+import LoginPage from "../loginPage/loginPage";
+import DetailsPage from "../DetailsPage"
 
-const routes = {
-  openingPage: "/",
-  loginPage: "/login",
+export const routes = {
+  root: "/",
+  login: "/login",
+  profilePage: "/profilePage",
+  feedPage: "/addressform",
+  addressFormPage: "/addressform",
   detailsPage: "/detailspage",
 };
 
