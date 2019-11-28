@@ -1,30 +1,43 @@
-import React from "react";
-import { ConnectedRouter } from "connected-react-router";
-import { Switch, Route } from "react-router-dom";
-import SearchBar from "../../components/SearchBar/SearchBar";
-import routes from "./index"
+import React, {Component} from "react";
+import { Route } from "react-router-dom";
+import {routes} from "./index"
+import AddressFormPage from '../../components/AddressFormPage';
+import SignUpPage from "../SignUpPage/index"
+import OpeningPage from "../../components/OpeningPage/OpeningPage";
+import ProfilePage from "../../components/ProfilePage/ProfilePage";
+import FeedPage from "../FeedPage/feedPage";
+import LoginPage from "../LoginPage/LoginPage";
+import DetailsPage from "../DetailsPage"
+import {push} from "connected-react-router";
+import {connect} from "react-redux";
 
-const routes = {
-};
+class ProtectedRouter extends Component {
 
-function ProtectedRouter(props) {
-
-    const token = localStorage.getItem("token")
-    const address = localStorage.getItem("address")
-    
-    let route
-    if (token === false){
-        route = <Route path={routes.login} component={() => <LoginPage />} />
+    checkRoute = () => {
+        const token = localStorage.getItem("token");
+        const address = localStorage.getItem("hasAddress");
+        if (token === null)
+            this.props.gotoLoginPage()
+        else if (address === null || address === "false"){
+            this.props.gotoAddressFormPage()      
     }
-    else{
-        address === false ?
-            route = <Route path={routes.address} component={() => <Address />} />:
-            route = <Route path={props.path} component={props.component} />
-    }   
-    
-    return (
-        {route}
-    );
+        else
+            return <Route path={this.props.path} component={this.props.component}/>
+    };
+
+    render () {
+        const route = this.checkRoute();
+        return (
+             <div>
+                 {route}
+             </div>
+        );
+    }
 }
 
-export default ProtectedRouter;
+const mapDispatchToProps = dispatch =>({
+    gotoLoginPage: () => dispatch(push(routes.loginPage)),
+    gotoAddressFormPage: () => dispatch(push(routes.addressFormPage)),
+});
+
+export default connect(null, mapDispatchToProps)(ProtectedRouter);

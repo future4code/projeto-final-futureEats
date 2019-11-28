@@ -79,7 +79,7 @@ const QuantityPickerStyled = styled(QuantityPicker)`
 const PopoverStyled = styled(Popover)`
   margin-top: 170px;
   margin-left: 24px;
- `
+ `;
 
 class DetailsPage extends Component {
   constructor(props) {

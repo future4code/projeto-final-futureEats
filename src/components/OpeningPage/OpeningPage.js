@@ -12,30 +12,30 @@ const Main = styled.div`
     justify-items: center;
     width: 100vw;
     height: 100vh;
-`
+`;
 const ImgLogo = styled.img`
     width: 126px;
     height: 65px;
     object-fit: contain;
-`
+`;
 
 export const OpeningPage = (props) => {
     useEffect( ()=>{ setTime()},[])
 
     const  setTime = () => {
         setTimeout(() => props.gotoLoginPage() , 3000)
-    }
+    };
 
     return(
         <Main>
             <ImgLogo src={Logo}/>
         </Main>
     )
-}
+};
 
 const mapDispatchToProps = dispatch => ({
-    gotoLoginPage: () => dispatch(push(routes.login)),
-})
+    gotoLoginPage: () => dispatch(push(routes.loginPage)),
+});
 
 export default connect(null, mapDispatchToProps)(OpeningPage)
 
