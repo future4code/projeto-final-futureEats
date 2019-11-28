@@ -11,14 +11,6 @@ import FormLabel from '@material-ui/core/FormLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-createMuiTheme({
-    pallete: {
-        primary: {
-            main: "green"
-        }
-    }
-});
-
 const StyledContainer = styled.div`
     display:flex;
     flex-direction:column;
@@ -195,6 +187,7 @@ const StyledBoxitems = styled.div`
     margin-bottom:33px;
     margin-top:8px;
     display:flex;
+    flex-direction:column;
     justify-content:center;
 `
 
