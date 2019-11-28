@@ -1,6 +1,6 @@
 import React from "react"
 import {render} from "enzyme"
-import {RestaurantCard} from "./restaurantCard"
+import {RestaurantCard} from "./RestaurantCard"
 
 describe("RestaurantCard", () =>{
     it("RestaurantCard Snapshot", () =>{

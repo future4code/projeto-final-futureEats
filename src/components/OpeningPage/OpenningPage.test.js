@@ -1,6 +1,6 @@
 import React from "react"
 import { render } from "enzyme"
-import {OpeningPage} from "./openingPage"
+import {OpeningPage} from "./OpeningPage"
 
 describe("OpeningPage", () => {
     it("OpeningPage Snapshot", () => {
