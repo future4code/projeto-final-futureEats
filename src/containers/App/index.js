@@ -15,7 +15,7 @@ import { createBrowserHistory } from "history";
 import { createStore, applyMiddleware, compose } from "redux";
 import { generateReducers } from "../../reducers";
 import { routerMiddleware } from "connected-react-router";
-import OpeningPage from "../../components/openingPage";
+import OpeningPage from "../../components/OpeningPage";
 
 const generateClassName = createGenerateClassName();
 const jss = create({
