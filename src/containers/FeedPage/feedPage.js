@@ -131,7 +131,7 @@ export function FeedPage(props) {
 }
 
 const mapStateToProps = state =>({
-    listRestaurants: ["a"] //state.login.restaurants
+    listRestaurants: state.login.restaurants
 })
 
 export default connect(mapStateToProps)(FeedPage);
