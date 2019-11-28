@@ -41,8 +41,7 @@ export const App = () => (
     <JssProvider jss={jss} generateClassName={generateClassName}>
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-
-        <AddressFormPage />
+        <Router history={history} />
       </MuiThemeProvider>
     </JssProvider>
   </Provider>

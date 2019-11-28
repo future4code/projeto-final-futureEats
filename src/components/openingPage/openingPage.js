@@ -1,12 +1,12 @@
-import React, { useEffect } from "react"
-import Logo from "../img/logo-future-eats_2019-11-25/logo-future-eats.png"
-import styled from "styled-components"
-import { connect } from "react-redux"
-import { push } from "connected-react-router"
-import { routes } from '../containers/Router'
+import React, { useEffect } from "react";
+import Logo from "../img/logo-future-eats_2019-11-25/logo-future-eats.png";
+import styled from "styled-components";
+import { connect } from "react-redux";
+import { push } from "connected-react-router";
+import { routes } from "../containers/Router";
 
 const Main = styled.div`
-    background-color: #000000
+    background-color: #000000;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -19,7 +19,7 @@ const ImgLogo = styled.img`
     object-fit: contain;
 `
 
-const OpeningPage = (props) => {
+export const OpeningPage = (props) => {
     useEffect( ()=>{ setTime()},[])
 
     const  setTime = () => {
@@ -34,7 +34,7 @@ const OpeningPage = (props) => {
 }
 
 const mapDispatchToProps = dispatch => ({
-    gotoLoginPage: () => dispatch(push(routes.login))
+    gotoLoginPage: () => dispatch(push(routes.login)),
 })
 
 export default connect(null, mapDispatchToProps)(OpeningPage)
