@@ -16,6 +16,7 @@ import { createStore, applyMiddleware, compose } from "redux";
 import { generateReducers } from "../../reducers";
 import { routerMiddleware } from "connected-react-router";
 import "rsuite/dist/styles/rsuite-default.css";
+import KartPage from '../KartPage';
 
 
 const generateClassName = createGenerateClassName();
@@ -41,7 +42,7 @@ export const App = () => (
     <JssProvider jss={jss} generateClassName={generateClassName}>
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
-        <Router history={history} />
+        <KartPage/>
       </MuiThemeProvider>
     </JssProvider>
   </Provider>
