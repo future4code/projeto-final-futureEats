@@ -3,20 +3,23 @@ import styled from 'styled-components'
 import Roboto from 'typeface-roboto'
 
 const MainContainer = styled.div`
-    width: 328px;
+    width: 100%;
     height: 188px;
     border-radius: 8px;
     border: solid 1px #b8b8b8;
+    margin-top: 8px;
 `
 
 const Container = styled.div`
     display: flex;
+    justify-content: space-between;
     margin: 0px;
     padding: 0px;
+    width:100%;
 `
 
 const ImgStyled = styled.img`
-    width: 328px;
+    width: 100%;
     height: 120px;
     object-fit: contain;
     border-radius: 8px 8px 0  0;
@@ -70,7 +73,7 @@ const Shipping = styled.p`
 `
 
 
-const RestaurantCard = (props) => {
+export const RestaurantCard = (props) => {
     
     return(
         <MainContainer>

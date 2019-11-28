@@ -1,0 +1,2612 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FoodsCard FoodsCard Snapshot 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-bdVaJa dzaoIy",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "MuiPaper-root-1 MuiPaper-elevation1-4 MuiPaper-rounded-2 sc-bwzfXH kIbsea",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "sc-bZQynM bpuuCJ",
+              "src": "https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/65c38aa8-b094-413d-9a80-ddc256bfcc78/201907031404_66194495.jpg",
+            },
+            "children": Array [],
+            "name": "img",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {},
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "class": "sc-htoDjs iQaLze",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "sc-gzVnrw loDddZ",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-EHOje eHqZlE",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "1",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "p",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "sc-dnqmqq driQJb",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-htpNat cKXkoT",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Bibsfiha carne",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "sc-iwsKbI jnLIma",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-bxivhb iGmmFD",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Esfiha deliciosa, receita secreta do Habibs.",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "p",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "attribs": Object {
+                          "class": "sc-gqjmRU hKdHBF",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "class": "sc-gZMcBi dWDEsF",
+                            },
+                            "children": Array [
+                              Object {
+                                "attribs": Object {
+                                  "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                                },
+                                "children": Array [
+                                  Object {
+                                    "data": "R$1,00",
+                                    "next": null,
+                                    "parent": [Circular],
+                                    "prev": null,
+                                    "type": "text",
+                                  },
+                                ],
+                                "name": "p",
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "tag",
+                                "x-attribsNamespace": Object {
+                                  "class": undefined,
+                                },
+                                "x-attribsPrefix": Object {
+                                  "class": undefined,
+                                },
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": Object {
+                              "attribs": Object {
+                                "class": "sc-VigVT cqnmeY",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "adicionar",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "button",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": [Circular],
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          Object {
+                            "attribs": Object {
+                              "class": "sc-VigVT cqnmeY",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "adicionar",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "button",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": Object {
+                              "attribs": Object {
+                                "class": "sc-gZMcBi dWDEsF",
+                              },
+                              "children": Array [
+                                Object {
+                                  "attribs": Object {
+                                    "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                                  },
+                                  "children": Array [
+                                    Object {
+                                      "data": "R$1,00",
+                                      "next": null,
+                                      "parent": [Circular],
+                                      "prev": null,
+                                      "type": "text",
+                                    },
+                                  ],
+                                  "name": "p",
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "tag",
+                                  "x-attribsNamespace": Object {
+                                    "class": undefined,
+                                  },
+                                  "x-attribsPrefix": Object {
+                                    "class": undefined,
+                                  },
+                                },
+                              ],
+                              "name": "div",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": [Circular],
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "sc-dnqmqq driQJb",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-htpNat cKXkoT",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Bibsfiha carne",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "sc-iwsKbI jnLIma",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-bxivhb iGmmFD",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Esfiha deliciosa, receita secreta do Habibs.",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "sc-gqjmRU hKdHBF",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "sc-gZMcBi dWDEsF",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "R$1,00",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "p",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Object {
+                            "attribs": Object {
+                              "class": "sc-VigVT cqnmeY",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "adicionar",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "button",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        Object {
+                          "attribs": Object {
+                            "class": "sc-VigVT cqnmeY",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "adicionar",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "button",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": Object {
+                            "attribs": Object {
+                              "class": "sc-gZMcBi dWDEsF",
+                            },
+                            "children": Array [
+                              Object {
+                                "attribs": Object {
+                                  "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                                },
+                                "children": Array [
+                                  Object {
+                                    "data": "R$1,00",
+                                    "next": null,
+                                    "parent": [Circular],
+                                    "prev": null,
+                                    "type": "text",
+                                  },
+                                ],
+                                "name": "p",
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "tag",
+                                "x-attribsNamespace": Object {
+                                  "class": undefined,
+                                },
+                                "x-attribsPrefix": Object {
+                                  "class": undefined,
+                                },
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "sc-htoDjs iQaLze",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "sc-gzVnrw loDddZ",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-EHOje eHqZlE",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "1",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "p",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "sc-iwsKbI jnLIma",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-bxivhb iGmmFD",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Esfiha deliciosa, receita secreta do Habibs.",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "sc-gqjmRU hKdHBF",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "sc-gZMcBi dWDEsF",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "R$1,00",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "p",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Object {
+                          "attribs": Object {
+                            "class": "sc-VigVT cqnmeY",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "adicionar",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "button",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      Object {
+                        "attribs": Object {
+                          "class": "sc-VigVT cqnmeY",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "adicionar",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "button",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": Object {
+                          "attribs": Object {
+                            "class": "sc-gZMcBi dWDEsF",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "R$1,00",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "p",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "sc-dnqmqq driQJb",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-htpNat cKXkoT",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Bibsfiha carne",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "class": "sc-htoDjs iQaLze",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "sc-gzVnrw loDddZ",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-EHOje eHqZlE",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "1",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "p",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "sc-gqjmRU hKdHBF",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "sc-gZMcBi dWDEsF",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "R$1,00",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "p",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "attribs": Object {
+                          "class": "sc-VigVT cqnmeY",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "adicionar",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "button",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    Object {
+                      "attribs": Object {
+                        "class": "sc-VigVT cqnmeY",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "adicionar",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "button",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "class": "sc-gZMcBi dWDEsF",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "R$1,00",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "p",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "sc-iwsKbI jnLIma",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-bxivhb iGmmFD",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Esfiha deliciosa, receita secreta do Habibs.",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "class": "sc-dnqmqq driQJb",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-htpNat cKXkoT",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "Bibsfiha carne",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "p",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "class": "sc-htoDjs iQaLze",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "class": "sc-gzVnrw loDddZ",
+                            },
+                            "children": Array [
+                              Object {
+                                "attribs": Object {
+                                  "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-EHOje eHqZlE",
+                                },
+                                "children": Array [
+                                  Object {
+                                    "data": "1",
+                                    "next": null,
+                                    "parent": [Circular],
+                                    "prev": null,
+                                    "type": "text",
+                                  },
+                                ],
+                                "name": "p",
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "tag",
+                                "x-attribsNamespace": Object {
+                                  "class": undefined,
+                                },
+                                "x-attribsPrefix": Object {
+                                  "class": undefined,
+                                },
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "src": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "src": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {},
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "sc-htoDjs iQaLze",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "class": "sc-gzVnrw loDddZ",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-EHOje eHqZlE",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "1",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "sc-dnqmqq driQJb",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-htpNat cKXkoT",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Bibsfiha carne",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "sc-iwsKbI jnLIma",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-bxivhb iGmmFD",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Esfiha deliciosa, receita secreta do Habibs.",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "sc-gqjmRU hKdHBF",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "sc-gZMcBi dWDEsF",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "R$1,00",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "p",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": Object {
+                            "attribs": Object {
+                              "class": "sc-VigVT cqnmeY",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "adicionar",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "button",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": [Circular],
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        Object {
+                          "attribs": Object {
+                            "class": "sc-VigVT cqnmeY",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "adicionar",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "button",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": Object {
+                            "attribs": Object {
+                              "class": "sc-gZMcBi dWDEsF",
+                            },
+                            "children": Array [
+                              Object {
+                                "attribs": Object {
+                                  "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                                },
+                                "children": Array [
+                                  Object {
+                                    "data": "R$1,00",
+                                    "next": null,
+                                    "parent": [Circular],
+                                    "prev": null,
+                                    "type": "text",
+                                  },
+                                ],
+                                "name": "p",
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "tag",
+                                "x-attribsNamespace": Object {
+                                  "class": undefined,
+                                },
+                                "x-attribsPrefix": Object {
+                                  "class": undefined,
+                                },
+                              },
+                            ],
+                            "name": "div",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": [Circular],
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "class": "sc-dnqmqq driQJb",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-htpNat cKXkoT",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Bibsfiha carne",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "p",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "sc-iwsKbI jnLIma",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-bxivhb iGmmFD",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Esfiha deliciosa, receita secreta do Habibs.",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "sc-gqjmRU hKdHBF",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "sc-gZMcBi dWDEsF",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "R$1,00",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "p",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": Object {
+                          "attribs": Object {
+                            "class": "sc-VigVT cqnmeY",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "adicionar",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "button",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": [Circular],
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      Object {
+                        "attribs": Object {
+                          "class": "sc-VigVT cqnmeY",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "adicionar",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "button",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": Object {
+                          "attribs": Object {
+                            "class": "sc-gZMcBi dWDEsF",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "R$1,00",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "p",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": [Circular],
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "sc-htoDjs iQaLze",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "sc-gzVnrw loDddZ",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-EHOje eHqZlE",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "1",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "p",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "class": "sc-iwsKbI jnLIma",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-bxivhb iGmmFD",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Esfiha deliciosa, receita secreta do Habibs.",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "p",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "sc-gqjmRU hKdHBF",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "sc-gZMcBi dWDEsF",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "R$1,00",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "p",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "attribs": Object {
+                          "class": "sc-VigVT cqnmeY",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "adicionar",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "button",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    Object {
+                      "attribs": Object {
+                        "class": "sc-VigVT cqnmeY",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "adicionar",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "button",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "class": "sc-gZMcBi dWDEsF",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "R$1,00",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "p",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "sc-dnqmqq driQJb",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-htpNat cKXkoT",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Bibsfiha carne",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "sc-htoDjs iQaLze",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "sc-gzVnrw loDddZ",
+                        },
+                        "children": Array [
+                          Object {
+                            "attribs": Object {
+                              "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-EHOje eHqZlE",
+                            },
+                            "children": Array [
+                              Object {
+                                "data": "1",
+                                "next": null,
+                                "parent": [Circular],
+                                "prev": null,
+                                "type": "text",
+                              },
+                            ],
+                            "name": "p",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "tag",
+                            "x-attribsNamespace": Object {
+                              "class": undefined,
+                            },
+                            "x-attribsPrefix": Object {
+                              "class": undefined,
+                            },
+                          },
+                        ],
+                        "name": "div",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "class": "sc-gqjmRU hKdHBF",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "class": "sc-gZMcBi dWDEsF",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "R$1,00",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "sc-VigVT cqnmeY",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "adicionar",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "button",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  Object {
+                    "attribs": Object {
+                      "class": "sc-VigVT cqnmeY",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "adicionar",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "button",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "class": "sc-gZMcBi dWDEsF",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-ifAKCX dprzdQ",
+                          },
+                          "children": Array [
+                            Object {
+                              "data": "R$1,00",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "text",
+                            },
+                          ],
+                          "name": "p",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "sc-iwsKbI jnLIma",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-bxivhb iGmmFD",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "Esfiha deliciosa, receita secreta do Habibs.",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "div",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "sc-dnqmqq driQJb",
+                    },
+                    "children": Array [
+                      Object {
+                        "attribs": Object {
+                          "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-htpNat cKXkoT",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "Bibsfiha carne",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                    ],
+                    "name": "div",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "class": "sc-htoDjs iQaLze",
+                      },
+                      "children": Array [
+                        Object {
+                          "attribs": Object {
+                            "class": "sc-gzVnrw loDddZ",
+                          },
+                          "children": Array [
+                            Object {
+                              "attribs": Object {
+                                "class": "MuiTypography-root-28 MuiTypography-body1-37 sc-EHOje eHqZlE",
+                              },
+                              "children": Array [
+                                Object {
+                                  "data": "1",
+                                  "next": null,
+                                  "parent": [Circular],
+                                  "prev": null,
+                                  "type": "text",
+                                },
+                              ],
+                              "name": "p",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "next": null,
+                              "parent": [Circular],
+                              "prev": null,
+                              "type": "tag",
+                              "x-attribsNamespace": Object {
+                                "class": undefined,
+                              },
+                              "x-attribsPrefix": Object {
+                                "class": undefined,
+                              },
+                            },
+                          ],
+                          "name": "div",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "tag",
+                          "x-attribsNamespace": Object {
+                            "class": undefined,
+                          },
+                          "x-attribsPrefix": Object {
+                            "class": undefined,
+                          },
+                        },
+                      ],
+                      "name": "div",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "sc-bZQynM bpuuCJ",
+                "src": "https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/65c38aa8-b094-413d-9a80-ddc256bfcc78/201907031404_66194495.jpg",
+              },
+              "children": Array [],
+              "name": "img",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "src": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "src": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;
