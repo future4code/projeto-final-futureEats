@@ -91,29 +91,19 @@ const Address = styled.p`
     letter-spacing: -0.39px;
     color: #b8b8b8;
     margin-top: 0px;
-`
-const mockRestaurantDetails = {
-  restaurant: {
-    description: "Habib's é uma rede de restaurantes de comida rápida brasileira especializada em culinária árabe, os restaurantes vendem mais de 600 milhões de esfirras por ano. A empresa emprega 22 mil colaboradores e tem 421 unidades distribuídas em mais de cem municípios em 20 unidades federativas.",
-    shipping: 6,
-    address: "Rua das Margaridas, 110 - Jardim das Flores",
-    name: "Habibs",
-    logoUrl: "http://soter.ninja/futureFoods/logos/habibs.jpg",
-    deliveryTime: 60,
-    category: "Árabe"
-  }
-}
+`;
+
 const DetailsCard = (props) => {
     return(
         <MainContainer>
-            <ImgStyled src={mockRestaurantDetails.restaurant.logoUrl}/>
-            <Restaurant>{mockRestaurantDetails.restaurant.name}</Restaurant>
-            <Category>{mockRestaurantDetails.restaurant.category}</Category>
+            <ImgStyled src={props.restaurantDetails.logoUrl}/>
+            <Restaurant>{props.restaurantDetails.name}</Restaurant>
+            <Category>{props.restaurantDetails.category}</Category>
             <Container>
-                <DeliveryTime>{mockRestaurantDetails.restaurant.deliveryTime} min</DeliveryTime>
-                <Shipping>Frete R${mockRestaurantDetails.restaurant.shipping},00</Shipping>
+                <DeliveryTime>{props.restaurantDetails.deliveryTime} min</DeliveryTime>
+                <Shipping>Frete R${props.restaurantDetails.shipping},00</Shipping>
             </Container>
-            <Address>{mockRestaurantDetails.restaurant.address}</Address>
+            <Address>{props.restaurantDetails.address}</Address>
         </MainContainer>
     )
 }

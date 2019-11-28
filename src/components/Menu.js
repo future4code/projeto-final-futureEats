@@ -6,6 +6,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import HomeIcon from '@material-ui/icons/Home';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PersonIcon from '@material-ui/icons/Person';
+import styled from "styled-components";
 
 const styles = {
     root: {
@@ -14,15 +15,21 @@ const styles = {
       color: "#81c784"
       }
     },
-    selected: {}
+    selected: {},
+    stickToBottom: {
+      width: '100%',
+      position: 'fixed',
+      bottom: 0,
+    },
   };
+
 
 class Menu extends React.Component {
   state = {
     value: " ",
   };
 
-  onClickHome = (event) => {
+onClickHome = (event) => {
     this.setState({
         value: 0
     });
@@ -42,8 +49,8 @@ onClickProfile = (event) => {
     const actionClasses = this.props.classes
 
     return (
-        
-      <BottomNavigation
+
+      <BottomNavigation style={{position: "fixed", bottom:"0", width:"100%"}}
         onChange={this.handleChange}
         showLabels
         value={this.state.value}
