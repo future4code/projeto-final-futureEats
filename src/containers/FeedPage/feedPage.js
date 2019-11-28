@@ -96,14 +96,14 @@ export function FeedPage(props) {
                 <SearchBar/>
                 <AppBarStyled position="static" color="default">
                     <Tabs
-                        value="1"
+                        value={1}
                         onChange={handleChange}
-                        indicatorColor="secundary"
-                        textColor="#000000"
+                        indicatorColor="secondary"
+                        textColor="primary"
                         variant="scrollable"
                         scrollButtons="auto"
                     >
-                        <Tab label="Carnes" />
+                        <Tab label="Carnes"  />
                         <Tab label="Italiana" />
                         <Tab label="Hamburguer" />
                         <Tab label="Asiática" />

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 const StyledPaper = styled(Paper)`
     height: 56px;
-    margin: 72px 16px 0;
+    margin: 8px 16px 8px;
     border: 1px lightgrey solid;
     border-radius: 2px;
     box-shadow: none;

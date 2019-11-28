@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Roboto from "typeface-roboto"
 
 const MainContainer = styled.div`
-    width: 100%;
     height: 246px;
 `
 
@@ -11,12 +10,10 @@ const Container = styled.div`
     display: flex;
     margin: 0px;
     padding: 0px;
-    justify-content: space-between;
-    width:100%;
 `
 
 const ImgStyled = styled.img`
-    width: 100%;
+    width: 328px;
     height: 120px;
     object-fit: contain;
     border-radius: 8px 8px 0  0;
@@ -83,7 +80,7 @@ const Shipping = styled.p`
     margin-bottom: 10px;
 `
 const Address = styled.p`
-    width: 100%;
+    width: 328px;
     height: 18px;
     font-family: Roboto;
     font-size: 16px;

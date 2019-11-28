@@ -20,12 +20,11 @@ const ImgLogo = styled.img`
 `
 
 export const OpeningPage = (props) => {
-
-    useEffect( ()=>{ setTime()}, [])
+    useEffect( ()=>{ setTime()},[])
 
     const  setTime = () => {
-        setTimeout(() => props.gotoLoginPage(), 3000)
-    }        
+        setTimeout(() => props.gotoLoginPage() , 3000)
+    }
 
     return(
         <Main>
@@ -39,3 +38,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(null, mapDispatchToProps)(OpeningPage)
+
