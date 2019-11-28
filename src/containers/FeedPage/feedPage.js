@@ -7,7 +7,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { connect } from "react-redux";
-import RestaurantCard from "../../components/restaurantsCard/restaurantCard"
+import RestaurantCard from "../../components/RestaurantsCard/RestaurantCard"
 
 const MainContainer = styled.div`
     height:100vh;
