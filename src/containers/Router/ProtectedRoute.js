@@ -1,10 +1,15 @@
 import React, {Component} from "react";
-import { ConnectedRouter } from "connected-react-router";
-import { Switch, Route } from "react-router-dom";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import { Route } from "react-router-dom";
 import routes from "./index"
+import AddressFormPage from '../../components/AddressFormPage';
+import SignUpPage from "../SignUpPage/index"
+import OpeningPage from "../../components/OpeningPage/OpeningPage";
+import ProfilePage from "../../components/ProfilePage/ProfilePage";
+import FeedPage from "../FeedPage/feedPage";
 import LoginPage from "../LoginPage/LoginPage";
-import AddressFormPage from "../../components/AddressFormPage";
+import DetailsPage from "../DetailsPage"
+
+
 
 
 class ProtectedRouter extends Component {
@@ -16,7 +21,7 @@ class ProtectedRouter extends Component {
         }
     }
 
-        bla = () => {
+    bla = () => {
         if (this.state.token === false) {
             return <Route path={routes.loginPage} component={() => <LoginPage/>}/>
         } else  if (this.state.address === false ) {
@@ -33,7 +38,6 @@ class ProtectedRouter extends Component {
             <div>
                 {route}
             </div>
-
         );
     }
 }
