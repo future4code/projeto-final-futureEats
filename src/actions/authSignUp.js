@@ -3,10 +3,11 @@ import { push } from "connected-react-router";
 import { routes } from "../containers/Router";
 
 
+
 export const authSignUp = (name, email, cpf, password) => async dispatch => {
   try {
     const response = await axios.post(
-      "https://us-central1-missao-newton.cloudfunctions.net/futureeats/signup",
+      "https://us-central1-missao-newton.cloudfunctions.net/futureEats/signup",
       {
         name,
         email,
@@ -15,7 +16,8 @@ export const authSignUp = (name, email, cpf, password) => async dispatch => {
       }
     );
     window.localStorage.setItem ("token", response.data.token);
-     // dispatch(push(routes.adress));
+    window.localStorage.setItem("address", response.data.user.hasAddress);
+     dispatch(push(routes.addressFormPage));
   } catch (e) {
 
   }

@@ -193,7 +193,7 @@ const LoginPage = (props) => {
                 <ButtonLogin type="submit" >Entrar</ButtonLogin>
             </FormLogin>
             <SingUp>Não possui cadastro?
-               <CallSingUp onClick={props.gotoSingUp}> Clique aqui.</CallSingUp>
+               <CallSingUp onClick={props.gotoSignUp}> Clique aqui.</CallSingUp>
             </SingUp>
             <ErrorMessage>{props.error}</ErrorMessage>
         </MainContainer>
@@ -207,7 +207,7 @@ const mapStateToProps = state =>({
 const mapDispatchToProps = dispatch => {
     return {
         apiLogin: (email, password) => dispatch(login(email, password)),
-        gotoSingUp: () => dispatch(push(routes.singUpPage)),
+        gotoSignUp: () => dispatch(push(routes.signUpPage)),
 
     }
 };

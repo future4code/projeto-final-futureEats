@@ -19,24 +19,24 @@ class ProtectedRouterPublic extends Component {
         super(props);
     }
     
-    bla = () => {
+    checkRoute = () => {
 
-        const token =  localStorage.getItem("token")
+        const token =  localStorage.getItem("token");
 
-        const address = localStorage.getItem("address")
+        const address = localStorage.getItem("address");
         console.log(token);
-        if (token === false && this.props.path === "address")
+        if (token === null && this.props.path === "address")
             this.props.gotoLoginPage()
-        else if (token === true && address === false)
+        else if (token === true && (address === null || address === false))
             this.props.gotoAddressFormPage()
-        else if (token === false) 
+        else if (token === null)
             return <Route path={this.props.path} component={this.props.component} />
         else
             this.props.gotoFeedPage() 
-    }
+    };
 
     render() {
-        const route = this.bla()
+        const route = this.checkRoute();
         
         return (
             <div>
@@ -51,6 +51,6 @@ const mapDispatchToProps = dispatch =>({
     gotoLoginPage: () => dispatch(push(routes.loginPage)), 
     gotoAddressFormPage: () => dispatch(push(routes.addressFormPage)),
     gotoFeedPage: () => dispatch(push(routes.feedPage)),
-})
+});
 
 export default connect(null, mapDispatchToProps)(ProtectedRouterPublic);

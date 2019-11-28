@@ -8,39 +8,36 @@ import ProfilePage from "../../components/ProfilePage/ProfilePage";
 import FeedPage from "../FeedPage/feedPage";
 import LoginPage from "../LoginPage/LoginPage";
 import DetailsPage from "../DetailsPage"
-
-
-
+import {push} from "connected-react-router";
+import {connect} from "react-redux";
 
 class ProtectedRouter extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            token: localStorage.getItem("token"),
-            address: localStorage.getItem("address")
-        }
-    }
 
-    bla = () => {
-        if (this.state.token === false) {
-            return <Route path={routes.loginPage} component={() => <LoginPage/>}/>
-        } else  if (this.state.address === false ) {
-            return <Route path={routes.addressFormPage} component={() => <AddressFormPage/>}/>
-        } else {
+    checkRoute = () => {
+        const token = localStorage.getItem("token");
+        const address = localStorage.getItem("address");
+        if (token === null)
+            this.props.gotoLoginPage();
+        else if (address === null || address === false)
+            this.props.gotoAddressFormPage();
+        else
             return <Route path={this.props.path} component={this.props.component}/>
-        }
-    }
+    };
 
     render () {
-        const route = this.bla();
+        const route = this.checkRoute();
         console.log(route);
-          return (
-            <div>
-                {route}
-            </div>
+        return (
+             <div>
+                 {route}
+             </div>
         );
     }
 }
 
+const mapDispatchToProps = dispatch =>({
+    gotoLoginPage: () => dispatch(push(routes.loginPage)),
+    gotoAddressFormPage: () => dispatch(push(routes.addressFormPage)),
+});
 
-export default ProtectedRouter;
+export default connect(null, mapDispatchToProps)(ProtectedRouter);
