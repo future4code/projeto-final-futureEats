@@ -6,7 +6,7 @@ import 'typeface-roboto';
 
 
 const CardWrapper = styled.div`
-  margin: auto;
+  padding-bottom: 8px;
 `;
 
 const PaperStyled = styled(Paper)`
@@ -61,7 +61,7 @@ const TypographyCounter = styled(Typography)`
   text-align: center;
   color: #5cb646;
   padding: 7px 12px;
-`
+`;
 
 const ImgStyled = styled.img`
   width: 96px;
@@ -124,50 +124,40 @@ const ButtonStyled = styled.button`
   padding: 2.5px 21.5px;
 `;
 
-const mockRestaurantDetails = {
-  product: {
-    id: "CnKdjU6CyKakQDGHzNln",
-    category: "Salgado",
-    price: 1,
-    photoUrl: "https://static-images.ifood.com.br/image/upload/f_auto,t_high/pratos/65c38aa8-b094-413d-9a80-ddc256bfcc78/201907031404_66194495.jpg",
-    name: "Bibsfiha carne",
-    description: "Esfiha deliciosa, receita secreta do Habibs."
-  }
-};
-
 export const FoodsCard = (props) => {
 
   return (
       <CardWrapper>
         <PaperStyled elevation={1}>
           <ImgStyled
-            src={mockRestaurantDetails.product.photoUrl}
+            src={props.product.photoUrl}
           />
            <div>
              <CounterWrapper>
                <Counter>
                  <TypographyCounter>
-                   1
+                 {props.product.id === props.productId ?
+                  props.selectedQuantity : ""}
                  </TypographyCounter>
                </Counter>
              </CounterWrapper>
                <TitleWrapper>
                  <TypographyTitle>
-                   {mockRestaurantDetails.product.name}
+                   {props.product.name}
                  </TypographyTitle>
                </TitleWrapper>
              <DescriptionWrapper>
                <TypographyDescription>
-                 {mockRestaurantDetails.product.description}
+                 {props.product.description}
                </TypographyDescription>
              </DescriptionWrapper>
              <ButtonWrapper>
                <PriceWrapper>
                  <TypographyPrice>
-                   R${mockRestaurantDetails.product.price},00
+                   R${props.product.price.toFixed(2)}
                  </TypographyPrice>
                </PriceWrapper>
-               <ButtonStyled>adicionar</ButtonStyled>
+               <ButtonStyled onClick={() => props.handlePopover(props.product.id)}>adicionar</ButtonStyled>
              </ButtonWrapper>
            </div>
         </PaperStyled>

@@ -8,7 +8,7 @@ import OpeningPage from "../../components/OpeningPage";
 import ProfilePage from "../../components/ProfilePage/ProfilePage";
 import FeedPage from "../FeedPage/feedPage";
 import LoginPage from "../loginPage/loginPage";
-
+import DetailsPage from "../DetailsPage"
 
 export const routes = {
   root: "/",
@@ -16,13 +16,16 @@ export const routes = {
   profilePage: "/profilePage",
   feedPage: "/addressform",
   addressFormPage: "/addressform",
+  detailsPage: "/detailspage",
 };
 
 function Router(props) {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
-        <Route path={routes.root} component={() => <div />} />
+        <Route path={routes.loginPage} component={LoginPage} />
+        <Route path={routes.detailsPage} component={DetailsPage} />
+        <Route path={routes.openingPage} component={OpeningPage} />
       </Switch>
     </ConnectedRouter>
   );

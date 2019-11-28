@@ -15,6 +15,8 @@ import { createBrowserHistory } from "history";
 import { createStore, applyMiddleware, compose } from "redux";
 import { generateReducers } from "../../reducers";
 import { routerMiddleware } from "connected-react-router";
+import "rsuite/dist/styles/rsuite-default.css";
+
 
 const generateClassName = createGenerateClassName();
 const jss = create({

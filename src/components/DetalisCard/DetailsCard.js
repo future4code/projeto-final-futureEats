@@ -1,9 +1,9 @@
 import React from "react"
 import styled from 'styled-components'
-import Roboto from "typeface-roboto"
+import "typeface-roboto"
 
 const MainContainer = styled.div`
-    height: 246px;
+    //height: 246px;
 `
 
 const Container = styled.div`
@@ -15,7 +15,7 @@ const Container = styled.div`
 const ImgStyled = styled.img`
     width: 328px;
     height: 120px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 8px 8px 0  0;
 `
 const Restaurant = styled.p`
@@ -91,19 +91,19 @@ const Address = styled.p`
     letter-spacing: -0.39px;
     color: #b8b8b8;
     margin-top: 0px;
-`
+`;
 
 const DetailsCard = (props) => {
     return(
         <MainContainer>
-            <ImgStyled src={props.img}/>
-            <Restaurant>{props.name}</Restaurant>
-            <Category>{props.category}</Category>
+            <ImgStyled src={props.restaurantDetails.logoUrl}/>
+            <Restaurant>{props.restaurantDetails.name}</Restaurant>
+            <Category>{props.restaurantDetails.category}</Category>
             <Container>
-                <DeliveryTime>{props.time} min</DeliveryTime>
-                <Shipping>Frete R${props.fret},00</Shipping>
+                <DeliveryTime>{props.restaurantDetails.deliveryTime} min</DeliveryTime>
+                <Shipping>Frete R${props.restaurantDetails.shipping},00</Shipping>
             </Container>
-            <Address>{props.address}</Address>
+            <Address>{props.restaurantDetails.address}</Address>
         </MainContainer>
     )
 }
