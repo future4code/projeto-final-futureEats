@@ -3,9 +3,9 @@ import {push} from "connected-react-router";
 import routes from "../Router"
 import {connect} from "react-redux"
 import styled from "styled-components";
-import {FoodsCard} from "../../components/FoodsCard"
+import {FoodsCard} from "../../components/FoodsCard/FoodsCard"
 import "typeface-roboto";
-import DetailsCard from "../../components/DetailsCard";
+import DetailsCard from "../../components/DetailsCard/DetailsCard";
 import {getRestaurantDetails} from "../../actions/restaurant";
 import {Typography} from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
@@ -79,7 +79,7 @@ const QuantityPickerStyled = styled(QuantityPicker)`
 const PopoverStyled = styled(Popover)`
   margin-top: 170px;
   margin-left: 24px;
- `
+ `;
 
 class DetailsPage extends Component {
   constructor(props) {

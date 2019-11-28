@@ -17,21 +17,21 @@ const MainContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items:center;
-`
+`;
 const FormLogin = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     margin-bottom: 28px;
-`
+`;
 
 const ImgStyled = styled.img`
     width: 104px;
     height: 58px;
     object-fit: contain;
     margin-top: 28px;
-`
+`;
 const Title = styled.p`
     margin-bottom: 20px;
     width: 296px;
@@ -45,30 +45,30 @@ const Title = styled.p`
     letter-spacing: -0.39px;
     text-align: center;
     color: #000000;
-`
+`;
 
 const TextFieldEmail = styled(TextField)`
     margin-top: 0px;
     width: 328px;
     height: 56px;
     border-radius: 2px;
-    border: solid 1px #b8b8b8;
     margin-bottom: 0px;
-`
+`;
+
 const TextFieldPassword = styled(TextField)`
     margin-top: 16px;
     margin-bottom: 16px;
     width: 328px;
     height: 56px;
     border-radius: 2px;
-    border: solid 1px #b8b8b8;
-`
+`;
+
 const ButtonLogin = styled(Button)`
     width: 328px;
     height: 42px;
     border-radius: 2px;
     background-color: #5cb646;
-`
+`;
 
 const SingUp = styled.p`
     margin-top: 0;
@@ -99,7 +99,7 @@ const CallSingUp = styled.p`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #000000;
-`
+`;
 
 const ErrorMessage = styled.p`
     margin-top: 0;
@@ -118,7 +118,7 @@ const ErrorMessage = styled.p`
     display: flex;
     justify-content: center;
     align-items:center;
-`
+`;
 
 
 const LoginPage = (props) => {
@@ -131,11 +131,11 @@ const LoginPage = (props) => {
         event.target.name === "email"?
             setEmail(event.target.value):
             setPassword(event.target.value)
-    }
+    };
 
     const handleClickShowPassword = () =>{
         setShowPassword(!showPassword)
-    }
+    };
 
     const setForm = (event) => {
         
@@ -143,7 +143,7 @@ const LoginPage = (props) => {
         props.apiLogin( email, password)
         setEmail('')
         setPassword('')
-    }
+    };
 
     return (
         <MainContainer>
@@ -193,16 +193,16 @@ const LoginPage = (props) => {
                 <ButtonLogin type="submit" >Entrar</ButtonLogin>
             </FormLogin>
             <SingUp>Não possui cadastro?
-               <CallSingUp onClick={props.gotoSingUp}> Clique aqui</CallSingUp>
+               <CallSingUp onClick={props.gotoSingUp}> Clique aqui.</CallSingUp>
             </SingUp>
             <ErrorMessage>{props.error}</ErrorMessage>
         </MainContainer>
     )
-}
+};
 
 const mapStateToProps = state =>({
-    error: state.login.error
-})
+    error: state.setTools.error
+});
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -210,5 +210,5 @@ const mapDispatchToProps = dispatch => {
         gotoSingUp: () => dispatch(push(routes.singUpPage)),
 
     }
-}
+};
 export default connect(mapStateToProps, mapDispatchToProps)(LoginPage)

@@ -8,6 +8,5 @@ export const generateReducers = history =>
   combineReducers({
     router: connectRouter(history),
     restaurant,
-    setTools: setTools
-    login
+    setTools,
   });
