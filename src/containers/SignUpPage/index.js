@@ -78,7 +78,7 @@ const ButtonCreate= styled.button`
         this.setState({ [prop]: event.target.value });
       };
  
-      handleChangeName = (event) => {
+     handleChangeName = (event) => {
         this.setState({
           name: event.target.value
         });
@@ -261,5 +261,4 @@ export default connect(
   mapDispatchToProps
   ) (SignUpPage)
   
-//TROCAR O CREATEUSERACTION PELO AUTHSIGNUP
 

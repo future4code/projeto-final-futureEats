@@ -4,12 +4,12 @@ exports[`OpeningPage OpeningPage Snapshot 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-bdVaJa dIkVTY",
+      "class": "sc-iELTvK kYAior",
     },
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "sc-bwzfXH cYucvQ",
+          "class": "sc-cmTdod iqYqzi",
           "src": "logo-future-eats.png",
         },
         "children": Array [],
