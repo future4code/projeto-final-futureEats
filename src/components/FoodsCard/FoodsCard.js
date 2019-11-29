@@ -106,7 +106,7 @@ const ButtonWrapper = styled.div`
   align-content: flex-start;
 `;
 
-const ButtonStyled = styled.button`
+const ButtonAddStyled = styled.button`
   margin-top: 6px;
   background-color: white;
   width: 90px;
@@ -123,7 +123,23 @@ const ButtonStyled = styled.button`
   color: #5cb646;
   padding: 2.5px 21.5px;
 `;
-
+const ButtonRemoveStyled = styled.button`
+  margin-top: 6px;
+  background-color: white;
+  width: 90px;
+  height: 31px;
+  border-radius: 8px 0 8px 0;
+  border: solid 1px #e02020;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.29px;
+  text-align: center;
+  color: #e02020;
+  padding: 2.5px 21.5px;
+`
 export const FoodsCard = (props) => {
 
   return (
@@ -158,7 +174,10 @@ export const FoodsCard = (props) => {
                    R${props.product.price.toFixed(2)}
                  </TypographyPrice>
                </PriceWrapper>
-               <ButtonStyled onClick={() => props.handlePopover(props.product.id)}>adicionar</ButtonStyled>
+               {props.selectedQuantity === 0 ?
+               <ButtonAddStyled onClick={() => props.handlePopover(props.product.id)}>adicionar</ButtonAddStyled> :
+                 <ButtonRemoveStyled onClick={() => props.handleRemoveItems}>remover</ButtonRemoveStyled>
+               }
              </ButtonWrapper>
            </div>
         </PaperStyled>
