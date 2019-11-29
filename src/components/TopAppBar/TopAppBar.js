@@ -10,7 +10,7 @@ import { connect } from "react-redux";
 const StyledAppBar = styled(AppBar)`
     box-shadow: none;    
     background-color: white;
-    width: 100vw;    
+    width: 100%;    
 `
 
 const StyledToolbar = styled(Toolbar)`    
@@ -18,7 +18,7 @@ const StyledToolbar = styled(Toolbar)`
     justify-content: space-between;    
     box-shadow: 0 0.5px 0 0 
         rgba(0, 0, 0, 0.25);
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     height: 64px;
@@ -37,16 +37,17 @@ const StyledPageTitle = styled.p`
 `
 
 const StyledArrowIcon = styled(ArrowBackIosIcon)`
-    position: absolute;
-    margin-left: 16px;
+     position: absolute;
+     margin-left: 16px;
 `
+
 
 function TopAppBar(props){
 
     return (
         <StyledAppBar position="static" color="default">
                 <StyledToolbar>
-                    {props.pageTitle === "FutureEats"? "" : <StyledArrowIcon onClick={props.goBack}/>}
+                    {props.pageTitle === "FutureEats"? "" : <div onClick={props.goBack}><StyledArrowIcon/></div>}
                     <StyledPageTitle>{props.pageTitle}</StyledPageTitle>
                 </StyledToolbar>
         </StyledAppBar>
