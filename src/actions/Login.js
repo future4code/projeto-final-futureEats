@@ -17,6 +17,7 @@ export const login = (email,password) => async dispacth => {
     } 
     catch (error) {
         dispacth(messageError(error.message))
+        alert("Email ou senha incorretos!")
     }
     
 } 
