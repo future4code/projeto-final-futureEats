@@ -214,7 +214,7 @@ export const selectedValue = () => {
 
 }
 
-export function KartPage(props) {
+export function CartPage(props) {
 
     const [formOfPayment, setformOfPayment] = useState("");
 
@@ -288,4 +288,4 @@ function mapDispatchToProps(dispatch) {
     })
 }
 
-export default connect(null, mapDispatchToProps)(KartPage);
+export default connect(null, mapDispatchToProps)(CartPage);

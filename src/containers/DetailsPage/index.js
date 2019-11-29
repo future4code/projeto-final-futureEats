@@ -6,7 +6,7 @@ import styled from "styled-components";
 import {FoodsCard} from "../../components/FoodsCard/FoodsCard"
 import "typeface-roboto";
 import DetailsCard from "../../components/DetailsCard/DetailsCard";
-import {getRestaurantDetails} from "../../actions/restaurant";
+import {getRestaurantDetails, setSelectedProduct} from "../../actions/restaurant";
 import {Typography} from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
 import {Popover, Whisper} from "rsuite";
@@ -118,10 +118,10 @@ class DetailsPage extends Component {
     this.setState({
       isQuantityPopoverOpen: false,
     });
-   };
+  };
 
-  onChangeQuantitySelection = (selectedQuantity) => {
-    this.setState({ selectedQuantity });
+  onChangeQuantitySelection = (quantity) => {
+    this.props.setSelectedProduct(this.state.productId, quantity);
   };
 
 
@@ -133,29 +133,31 @@ class DetailsPage extends Component {
     const orderedProducts = restaurantDetails.products.sort(this.sortProductsByCategory);
 
     let lastCategory;
-
     const allProducts = orderedProducts.map(product => {
-      let shouldShowCategory = false;
-      if (lastCategory !== product.category) {
-        lastCategory = product.category
-        shouldShowCategory = true
+        let shouldShowCategory = false;
+        if (lastCategory !== product.category) {
+          lastCategory = product.category
+          shouldShowCategory = true
+        }
+      if (product.quantity !== undefined){
+        console.log(product.quantity) 
       }
-      return (
-        <Fragment>
-          {shouldShowCategory ? (
-            <TypographyStyled>
-              {product.category}
-              <Divider/>
-            </TypographyStyled>
-          ) : null}
-          <FoodsCard
-            product={product}
-            handlePopover={this.handleQuantityPopover}
-            selectedQuantity={this.state.selectedQuantity}
-            productId={this.state.productId}
-          />
-        </Fragment>
-      )
+        return (
+          <Fragment>
+            {shouldShowCategory ? (
+              <TypographyStyled>
+                {product.category}
+                <Divider/>
+              </TypographyStyled>
+            ) : null}
+            <FoodsCard
+              product={product}
+              handlePopover={this.handleQuantityPopover}
+              selectedQuantity={product.quantity !== undefined ? product.quantity : 0}
+              productId={this.props.productId}
+            />
+          </Fragment>
+        )
     });
 
     return (
@@ -182,18 +184,18 @@ class DetailsPage extends Component {
       </DetailsPageContainer>
     )
   }
-
-
 }
 
 const mapStateToProps = state => ({
   restaurantId: state.restaurant.restaurantId,
   restaurantDetails: state.restaurant.restaurantDetails,
+  selectedProducts: state.restaurant.selectedProducts,
 });
 
 const mapDispatchToProps = dispatch => ({
   getRestaurantDetails: (restaurantId) => dispatch(getRestaurantDetails(restaurantId)),
   goToLogin: () => dispatch(push(routes.loginPage)),
+  setSelectedProduct: (productId, quantity) => dispatch(setSelectedProduct(productId, quantity)),
 });
 
 

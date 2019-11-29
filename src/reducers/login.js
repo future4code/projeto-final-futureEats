@@ -1,6 +1,7 @@
 const initialState = {
     error: "",
-    user: {}
+    user: {},
+    restaurants: []
 };
 
 export const setTools = (state = initialState, action) => {
