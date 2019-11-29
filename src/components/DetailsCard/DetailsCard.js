@@ -4,7 +4,7 @@ import "typeface-roboto"
 
 const MainContainer = styled.div`
     //height: 246px;
-`
+`;
 
 const Container = styled.div`
     display: flex;
@@ -13,6 +13,7 @@ const Container = styled.div`
 `;
 
 const ImgStyled = styled.img`
+    margin-top: 16px;
     width: 328px;
     height: 120px;
     object-fit: contain;

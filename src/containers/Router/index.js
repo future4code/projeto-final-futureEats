@@ -30,11 +30,11 @@ function Router(props) {
         <ProtectedRouterPublic path={routes.loginPage} component={LoginPage} />
         <ProtectedRouterPublic path={routes.signUpPage} component={SignUpPage} />
         <ProtectedRouterPublic path={routes.addressFormPage} component={AddressFormPage} />
-        <Route path={routes.detailsPage} component={DetailsPage} />
+        <ProtectedRouter path={routes.detailsPage} component={DetailsPage} />
         <ProtectedRouter path={routes.feedPage} component={FeedPage} />
         <ProtectedRouter path={routes.profilePage} component={ProfilePage} />
         <ProtectedRouter path={routes.cartPage} component={CartPage} />
-        <ProtectedRouter path={routes.root} component={OpeningPage} />
+        <Route path={routes.root} component={OpeningPage} />
       </Switch>
     </ConnectedRouter>
   );

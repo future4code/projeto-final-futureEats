@@ -14,6 +14,8 @@ import {QuantityPicker} from "../../components/QuantityPicker";
 import Button from "@material-ui/core/Button";
 import Menu from "../../components/Menu";
 import { Modal } from 'rsuite';
+import Menu from "../../components/Menu"
+import TopAppBar from "../../components/TopAppBar/TopAppBar";
 
 
 const DetailsPageContainer = styled.div`
@@ -39,9 +41,9 @@ const TypographyStyled = styled(Typography)`
 `;
 
 const PopupText = styled.p`
-  text-align: center;
-  margin-top: 6px;
-  margin-bottom: 15px;
+text-align: center;
+  margin-top: 12px;
+  margin-bottom: 31px;
   width: 296px;
   height: 18px;
   font-family: Roboto;
@@ -111,17 +113,16 @@ class DetailsPage extends Component {
     return 0;
   }
 
-  handleQuantityModal = (productId, size) => {
+  handleQuantityPopover = (productId) => {
     this.setState({
-      isModalOpen: true,
-      productId,
-      size,
+      isQuantityPopoverOpen: true,
+      productId
       }
     )
   };
   handleAddToCart = () => {
     this.setState({
-      isModalOpen: false,
+      isQuantityPopoverOpen: false,
     });
     this.props.addToCart(this.props.selectedProducts);
   };
@@ -137,7 +138,7 @@ class DetailsPage extends Component {
   render() {
     const {restaurantDetails} = this.props;
     if (!restaurantDetails.products) {
-      return (<h1>...</h1>)
+      return (<h1>Carregando</h1>)
     }
     const orderedProducts = restaurantDetails.products.sort(this.sortProductsByCategory);
 
@@ -161,7 +162,7 @@ class DetailsPage extends Component {
             ) : null}
             <FoodsCard
               product={product}
-              handleModal={this.handleQuantityModal}
+              handlePopover={this.handleQuantityPopover}
               selectedQuantity={product.quantity !== undefined ? product.quantity : 0}
               productId={this.props.productId}
               handleRemoveItens={this.handleRemoveItems}
@@ -178,11 +179,9 @@ class DetailsPage extends Component {
           {allProducts}
         </SectionTitleWrapper>
         <div>
-          <ModalStyled
-            backdrop={this.state.backdrop}
-            size={this.state.size}
-            show={this.state.isModalOpen}
-            style={{height: 216, width: 328, position: "fixed",}}>
+          <PopoverStyled
+            visible={this.state.isQuantityPopoverOpen}
+            style={{height: 216, width: 328}}>
             <PopupText>
               Selecione a Quantidade Desejada
             </PopupText>
@@ -191,7 +190,7 @@ class DetailsPage extends Component {
               placement="top"
             />
             <ButtonStyled onClick={this.handleAddToCart}>ADICIONAR AO CARRINHO</ButtonStyled>
-          </ModalStyled>
+          </PopoverStyled>
         </div>
         <Menu />
       </DetailsPageContainer>

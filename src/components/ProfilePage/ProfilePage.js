@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 import {getUser} from "../../actions/profile"
 import {getHistory} from "../../actions/profile"
 import HistoryCard from "../HistoryCard";
-import Menu from "../Menu"
+import Menu from "../Menu";
 
 
 const Wrapper = styled.div`
@@ -69,7 +69,7 @@ const StyledAddress = styled.div`
     margin: 8px 16px 0;
 `
 
-const StyledHistoryTitle = styled.div`    
+const StyledHistoryTitle = styled.div`
     margin: 16px 16px 0;
 `
 
@@ -118,7 +118,6 @@ function ProfilePage(props){
                             props.history.map( (history) => 
                             (<HistoryCard  history={history} />) )}.
             </StyledHistory>
-
         </Wrapper>
     )
 }
