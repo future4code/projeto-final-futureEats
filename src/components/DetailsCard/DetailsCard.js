@@ -8,16 +8,17 @@ const MainContainer = styled.div`
 
 const Container = styled.div`
     display: flex;
-    margin: 0px;
-    padding: 0px;
-`
+    margin: 0;
+    padding: 0;
+`;
 
 const ImgStyled = styled.img`
     width: 328px;
     height: 120px;
     object-fit: contain;
     border-radius: 8px 8px 0  0;
-`
+`;
+
 const Restaurant = styled.p`
     width: 328px;
     height: 18px;
@@ -31,7 +32,7 @@ const Restaurant = styled.p`
     color: #5cb646;
     margin-top: 8px;
     margin-bottom: 8px;
-`
+`;
 
 const Category = styled.p`
     width: 104px;
@@ -44,9 +45,9 @@ const Category = styled.p`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #b8b8b8;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 8px;
-`
+`;
 
 const DeliveryTime = styled.p`
     width: 104px;
@@ -59,11 +60,11 @@ const DeliveryTime = styled.p`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #b8b8b8;
-    margin-top: 0px;
+    margin-top: 0;
     margin-right: 8px;
     margin-bottom: 10px;
 
-`
+`;
 
 const Shipping = styled.p`
     width: 104px;
@@ -76,9 +77,10 @@ const Shipping = styled.p`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #b8b8b8;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 10px;
-`
+`;
+
 const Address = styled.p`
     width: 328px;
     height: 18px;
@@ -90,7 +92,7 @@ const Address = styled.p`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #b8b8b8;
-    margin-top: 0px;
+    margin-top: 0;
 `;
 
 const DetailsCard = (props) => {
@@ -106,6 +108,6 @@ const DetailsCard = (props) => {
             <Address>{props.restaurantDetails.address}</Address>
         </MainContainer>
     )
-}
+};
 
 export default DetailsCard
