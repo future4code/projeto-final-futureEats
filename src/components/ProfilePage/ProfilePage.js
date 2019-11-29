@@ -1,17 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-
-const user = { //mock pra teste
-    name: "Astrodev",
-    email: "astrodev@future4.com",
-    cpf: "111.111.111-11",    
-    address: "R. Afonso Braz, 177 - Vila N. Conceição"
-}
-
-const order = null;
+import { connect } from "react-redux";
+import {getUser} from "../../actions/profile"
+import {getHistory} from "../../actions/profile"
+import HistoryCard from "../HistoryCard";
 
 const Wrapper = styled.div`
     height: 100vh;
@@ -89,7 +84,14 @@ const StyledHistory = styled.div`
     justify-content: center;
 `
 
-function ProfilePage(){
+function ProfilePage(props){
+    
+    useEffect(async ()=>{
+        await props.getUser()
+        await props.getHistory()
+    }, [])
+
+
 
     return (
         <Wrapper>
@@ -100,18 +102,35 @@ function ProfilePage(){
                     </StyledTitle>
                 </Toolbar>
             </StyledAppBar>
-            <StyledUserName>{user.name}</StyledUserName>
-            <StyledUserEmail>{user.email}</StyledUserEmail>
-            <StyledUserCPF>{user.cpf}</StyledUserCPF>
+            <StyledUserName>{props.user.name}</StyledUserName>
+            <StyledUserEmail>{props.user.email}</StyledUserEmail>
+            <StyledUserCPF>{props.user.cpf}</StyledUserCPF>
             <StyledRectangle>
                 <StyledAddressTitle>Endereço cadastrado</StyledAddressTitle>
-                <StyledAddress>{user.address}</StyledAddress>
+                <StyledAddress>{props.user.address}</StyledAddress>
             </StyledRectangle>
             <StyledHistoryTitle>Histórico de Pedidos</StyledHistoryTitle>
             <StyledDivider/>
-            <StyledHistory>{order === null? "Você não realizou nenhum pedido" : order}.</StyledHistory>
+            <StyledHistory>{props.history === null? 
+                            "Você não realizou nenhum pedido" :
+                            props.history.map( (history) => 
+                            (<HistoryCard  history={history} />) )}.
+            </StyledHistory>
         </Wrapper>
     )
 }
 
-export default ProfilePage;
+const mapStateToProps = state => {
+    console.log(state.setTools.user)
+    return ({
+        history: state.profile.history,
+        user: state.setTools.user
+    })
+}
+
+const mapDispatchToProps = dispatch => ({
+    getUser: () => dispatch(getUser()),
+    getHistory: () => dispatch(getHistory()),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProfilePage);

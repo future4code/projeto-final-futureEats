@@ -15,7 +15,7 @@ const Container = styled.div`
 const ImgStyled = styled.img`
     width: 328px;
     height: 120px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px 8px 0  0;
 `
 const Restaurant = styled.p`

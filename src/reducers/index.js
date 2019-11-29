@@ -4,6 +4,7 @@ import restaurant from "./restaurant";
 import { setTools } from './login';
 import login from "./login";
 import setFeed from "./feed";
+import profile from "./profile"
 
 export const generateReducers = history =>
   combineReducers({
@@ -11,4 +12,5 @@ export const generateReducers = history =>
     restaurant,
     setTools,
     setFeed,
+    profile
   });
