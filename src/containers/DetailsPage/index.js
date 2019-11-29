@@ -13,6 +13,7 @@ import {Popover, Whisper} from "rsuite";
 import {QuantityPicker} from "../../components/QuantityPicker";
 import Button from "@material-ui/core/Button";
 import Menu from "../../components/Menu"
+import TopAppBar from "../../components/TopAppBar/TopAppBar";
 
 
 const DetailsPageContainer = styled.div`
@@ -130,6 +131,7 @@ class DetailsPage extends Component {
   };
 
   render() {
+    const pageTitle = "Restaurante"
     const {restaurantDetails} = this.props;
     if (!restaurantDetails.products) {
       return (<h1>Carregando</h1>)
@@ -168,6 +170,7 @@ class DetailsPage extends Component {
 
     return (
       <DetailsPageContainer>
+        <TopAppBar pageTitle={pageTitle}/>
         <DetailsCard restaurantDetails={restaurantDetails}/>
         <SectionTitleWrapper>
           {allProducts}
