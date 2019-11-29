@@ -279,6 +279,7 @@ export function CartPage(props) {
                 </StyledBoxButton>
                         <Menu />
             </StyledFormControl>
+            <Menu />
         </StyledContainer>
     )
 }
