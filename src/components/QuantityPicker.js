@@ -52,7 +52,7 @@ export const QuantityPicker = props => {
       placeholder="Quantidade"
       searchable={false}
       data={data}
-      style={{ height: 56 , width: 296}}
+      style={{ width: 296 }}
     />
   );
 };

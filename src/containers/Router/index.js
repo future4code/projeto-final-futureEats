@@ -10,6 +10,7 @@ import LoginPage from "../LoginPage/LoginPage";
 import DetailsPage from "../DetailsPage"
 import ProtectedRouterPublic from "./ProtectedRoutePublic";
 import ProtectedRouter from "./ProtectedRoute";
+import {CartPage} from "../CartPage";
 
 export const routes = {
   root: "/",
@@ -29,11 +30,11 @@ function Router(props) {
         <ProtectedRouterPublic path={routes.loginPage} component={LoginPage} />
         <ProtectedRouterPublic path={routes.signUpPage} component={SignUpPage} />
         <ProtectedRouterPublic path={routes.addressFormPage} component={AddressFormPage} />
-        <ProtectedRouter path={routes.detailsPage} component={DetailsPage} />
+        <Route path={routes.detailsPage} component={DetailsPage} />
         <ProtectedRouter path={routes.feedPage} component={FeedPage} />
         <ProtectedRouter path={routes.profilePage} component={ProfilePage} />
-        <ProtectedRouter path={routes.cartPage} component={ProfilePage} />
-        <Route path={routes.root} component={OpeningPage} />
+        <ProtectedRouter path={routes.cartPage} component={CartPage} />
+        <ProtectedRouter path={routes.root} component={OpeningPage} />
       </Switch>
     </ConnectedRouter>
   );

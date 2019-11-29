@@ -147,6 +147,7 @@ export function FeedPage(props) {
     )
 }
 
+
 const mapStateToProps = state =>{
     return({
         listRestaurants: state.setFeed.restaurant
@@ -158,5 +159,6 @@ const mapDispatchToProps = dispatch => ({
     goRestaurant: () => dispatch(push(routes.detailsPage)),
     setRestaurant: id => dispatch(setRestaurant(id)),
 })
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(FeedPage);

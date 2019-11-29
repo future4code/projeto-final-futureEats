@@ -18,6 +18,7 @@ import { routerMiddleware } from "connected-react-router";
 import "rsuite/dist/styles/rsuite-default.css";
 
 
+
 const generateClassName = createGenerateClassName();
 const jss = create({
   ...jssPreset(),
@@ -42,7 +43,7 @@ export const App = () => (
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Router history={history} />
-      </MuiThemeProvider>
+        </MuiThemeProvider>
     </JssProvider>
   </Provider>
 );

@@ -133,14 +133,15 @@ export const FoodsCard = (props) => {
             src={props.product.photoUrl}
           />
            <div>
+             {props.selectedQuantity !== 0 ?
              <CounterWrapper>
                <Counter>
+
                  <TypographyCounter>
-                 {props.product.id === props.productId ?
-                  props.selectedQuantity : ""}
+                 {props.selectedQuantity}
                  </TypographyCounter>
                </Counter>
-             </CounterWrapper>
+             </CounterWrapper> : ""}
                <TitleWrapper>
                  <TypographyTitle>
                    {props.product.name}
