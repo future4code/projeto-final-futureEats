@@ -17,3 +17,4 @@ export const setRestaurant = (restaurants) => {
         payload: {restaurants: restaurants}
     })
 }
+
