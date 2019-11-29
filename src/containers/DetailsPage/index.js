@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from "react";
 import {push} from "connected-react-router";
-import routes from "../Router"
+import { routes }from "../Router"
 import {connect} from "react-redux"
 import styled from "styled-components";
 import {FoodsCard} from "../../components/FoodsCard/FoodsCard"

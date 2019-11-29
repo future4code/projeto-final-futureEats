@@ -10,7 +10,7 @@ import { Button } from "@material-ui/core";
 import { push } from "connected-react-router";
 import { routes } from "../Router";
 import { login } from "../../actions/Login";
-import { connect } from "react-redux"
+import { connect } from "react-redux";
 
 const MainContainer = styled.div`
     display: flex;
@@ -32,9 +32,19 @@ const ImgStyled = styled.img`
     object-fit: contain;
     margin-top: 28px;
 `;
-const Title = styled.p`
-    margin-bottom: 20px;
-    width: 296px;
+
+const Title = styled.div`
+    width: 360px;
+    height: 42px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-top:16px;
+    margin-bottom:8px;
+`
+
+const Text = styled.p`
+    width: 100%;
     height: 18px;
     font-family: Roboto;
     font-size: 16px;
@@ -45,6 +55,8 @@ const Title = styled.p`
     letter-spacing: -0.39px;
     text-align: center;
     color: #000000;
+    margin-bottom:12px;
+    margin-top:12px
 `;
 
 const TextFieldEmail = styled(TextField)`
@@ -138,7 +150,6 @@ const LoginPage = (props) => {
     };
 
     const setForm = (event) => {
-        
         event.preventDefault()
         props.apiLogin( email, password)
         setEmail('')
@@ -146,15 +157,21 @@ const LoginPage = (props) => {
     };
 
     return (
+        
         <MainContainer>
             <ImgStyled src={Logo} />
-            <Title>Entrar</Title>
+            <Title>
+                <Text>
+                    Entrar
+                </Text>
+            </Title>
             <FormLogin onSubmit={setForm}>
                 <TextFieldEmail
                     id="outlined-email"
-                    label="E-mail*"
+                    label="E-mail"
                     value={email}
-                    onChange={handleChange}
+                    onChange={handleChange }
+                    required={true}
                     margin="normal"
                     variant="outlined"
                     type="email"
@@ -169,15 +186,19 @@ const LoginPage = (props) => {
                     id="password"
                     variant="outlined"
                     type={showPassword ? 'text' : 'password'}
-                    label="Senha*"
+                    label="Senha"
                     name="password"
                     placeholder="Mínimo 6 caracteres"
                     value={password}
+                    minlenght="6"
+                    required={true}
                     onChange={handleChange}
                     InputLabelProps={{
                         shrink: true,
                     }}
+                    erorText="Mínimo de 6 caracteres!"
                     InputProps={{
+                        minlenght:"6",
                         endAdornment: (
                             <InputAdornment position="end">
                                 <IconButton
