@@ -175,7 +175,7 @@ export const FoodsCard = (props) => {
                  </TypographyPrice>
                </PriceWrapper>
                {props.selectedQuantity === 0 ?
-               <ButtonAddStyled onClick={() => props.handlePopover(props.product.id)}>adicionar</ButtonAddStyled> :
+               <ButtonAddStyled size={"lg"} onClick={() => props.handleModal(props.product.id, 'lg')}>adicionar</ButtonAddStyled> :
                  <ButtonRemoveStyled onClick={() => props.handleRemoveItems}>remover</ButtonRemoveStyled>
                }
              </ButtonWrapper>

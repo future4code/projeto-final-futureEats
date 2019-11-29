@@ -12,7 +12,8 @@ import Divider from "@material-ui/core/Divider";
 import {Popover, Whisper} from "rsuite";
 import {QuantityPicker} from "../../components/QuantityPicker";
 import Button from "@material-ui/core/Button";
-import Menu from "../../components/Menu"
+import Menu from "../../components/Menu";
+import { Modal } from 'rsuite';
 
 
 const DetailsPageContainer = styled.div`
@@ -38,9 +39,9 @@ const TypographyStyled = styled(Typography)`
 `;
 
 const PopupText = styled.p`
-text-align: center;
-  margin-top: 12px;
-  margin-bottom: 31px;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 15px;
   width: 296px;
   height: 18px;
   font-family: Roboto;
@@ -55,7 +56,7 @@ text-align: center;
 `;
 
 const ButtonStyled = styled(Button)`
-  margin-left: 98px;
+  margin-left: 80px;
   height: 19px;
   font-family: Roboto;
   font-size: 16px;
@@ -73,21 +74,24 @@ const QuantityPickerStyled = styled(QuantityPicker)`
   height: 56px;
   border-radius: 4px;
   border: solid 1px #b8b8b8;
-  
+
 `;
 
-const PopoverStyled = styled(Popover)`
-  margin-top: 170px;
-  margin-left: 24px;
- `;
+const ModalStyled = styled(Modal)`
+  && {
+ margin: 20px;
+ margin-top: 160px;
+ }
+`;
 
 class DetailsPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isQuantityPopoverOpen: false,
+      isModalOpen: false,
       selectedQuantity: "",
-      productId:""
+      productId:"",
+      backdrop: true,
     }
   }
 
@@ -107,16 +111,17 @@ class DetailsPage extends Component {
     return 0;
   }
 
-  handleQuantityPopover = (productId) => {
+  handleQuantityModal = (productId, size) => {
     this.setState({
-      isQuantityPopoverOpen: true,
-      productId
+      isModalOpen: true,
+      productId,
+      size,
       }
     )
   };
   handleAddToCart = () => {
     this.setState({
-      isQuantityPopoverOpen: false,
+      isModalOpen: false,
     });
     this.props.addToCart(this.props.selectedProducts);
   };
@@ -132,7 +137,7 @@ class DetailsPage extends Component {
   render() {
     const {restaurantDetails} = this.props;
     if (!restaurantDetails.products) {
-      return (<h1>Carregando</h1>)
+      return (<h1>...</h1>)
     }
     const orderedProducts = restaurantDetails.products.sort(this.sortProductsByCategory);
 
@@ -156,7 +161,7 @@ class DetailsPage extends Component {
             ) : null}
             <FoodsCard
               product={product}
-              handlePopover={this.handleQuantityPopover}
+              handleModal={this.handleQuantityModal}
               selectedQuantity={product.quantity !== undefined ? product.quantity : 0}
               productId={this.props.productId}
               handleRemoveItens={this.handleRemoveItems}
@@ -173,9 +178,11 @@ class DetailsPage extends Component {
           {allProducts}
         </SectionTitleWrapper>
         <div>
-          <PopoverStyled
-            visible={this.state.isQuantityPopoverOpen}
-            style={{height: 216, width: 328}}>
+          <ModalStyled
+            backdrop={this.state.backdrop}
+            size={this.state.size}
+            show={this.state.isModalOpen}
+            style={{height: 216, width: 328, position: "fixed",}}>
             <PopupText>
               Selecione a Quantidade Desejada
             </PopupText>
@@ -184,7 +191,7 @@ class DetailsPage extends Component {
               placement="top"
             />
             <ButtonStyled onClick={this.handleAddToCart}>ADICIONAR AO CARRINHO</ButtonStyled>
-          </PopoverStyled>
+          </ModalStyled>
         </div>
         <Menu />
       </DetailsPageContainer>
