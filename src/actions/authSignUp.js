@@ -16,7 +16,7 @@ export const authSignUp = (name, email, cpf, password) => async dispatch => {
       }
     );
     window.localStorage.setItem ("token", response.data.token);
-    window.localStorage.setItem("address", response.data.user.hasAddress);
+    window.localStorage.setItem("hasAddress", response.data.user.hasAddress);
      dispatch(push(routes.addressFormPage));
   } catch (e) {
 

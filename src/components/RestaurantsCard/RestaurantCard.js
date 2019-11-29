@@ -76,7 +76,7 @@ const Shipping = styled.p`
 export const RestaurantCard = (props) => {
     
     return(
-        <MainContainer>
+        <MainContainer onClick={props.onClick}>
             <ImgStyled src={props.img} />
             <Restaurant>{props.name}</Restaurant>
             <Container>

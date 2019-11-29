@@ -41,7 +41,7 @@ export const createAddress = (street, number, neighbourhood, city, state, comple
             }
         )
         localStorage.setItem("token", res.data.token)
-        localStorage.setItem("hasAddress", res.data.user.address)
+        localStorage.setItem("hasAddress", res.data.user.hasAddress)
         dispatch(setError(""))
         dispatch(setUser(res.data.user))
         dispatch(push(routes.feedPage))
