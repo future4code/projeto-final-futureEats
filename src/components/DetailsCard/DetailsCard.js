@@ -8,11 +8,12 @@ const MainContainer = styled.div`
 
 const Container = styled.div`
     display: flex;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 `
 
 const ImgStyled = styled.img`
+    margin-top: 16px;
     width: 328px;
     height: 120px;
     object-fit: cover;
