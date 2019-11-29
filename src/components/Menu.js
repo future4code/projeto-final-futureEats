@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { push } from "connected-react-router";
+import { routes } from '../containers/Router'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
@@ -30,22 +33,30 @@ class Menu extends React.Component {
   };
 
 onClickHome = (event) => {
+
     this.setState({
         value: 0
     });
 };
+
+login() {
+  this.props.goTocartPage.login();
+}
+
 onClickCar = (event) => {
+    this.login();
     this.setState({
         value: 1
-    });
+    });  
 };
+
 onClickProfile = (event) => {
     this.setState({
         value: 2
     });
 };
 
-  render() {
+  render(props) {
     const actionClasses = this.props.classes
 
     return (
@@ -62,21 +73,33 @@ onClickProfile = (event) => {
          />
         <BottomNavigationAction  icon={<ShoppingCartIcon />}
          classes={actionClasses}
-         onClick={this.onClickCar}
+         onClick={ this.props.goTocartPage}
          
          />
         <BottomNavigationAction icon={<PersonIcon />} 
         classes={actionClasses} 
-        onClick={this.onClickProfile}
+        onClick={this.props.goToProfilePage}
         />
       </BottomNavigation>
    
     );
   }
 }
+const mapDispatchToProps = dispatch => ({
+  goTofeedPage: () => dispatch(push(routes.feedPage)),
+  goTocartPage: () => dispatch(push(routes.cartPage)),
+  goToProfilePage: () => dispatch(push(routes.profilePage)),
+
+});
+
 
 Menu.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Menu);
+/*
+export default connect(null,mapDispatchToProps) (withStyles(styles)(Menu));
+*/
+
+
+export default connect(null,mapDispatchToProps)(Menu);

@@ -1,7 +1,9 @@
 const initialState = {
   restaurantDetails: {},
-  restaurantId: "1",
+  restaurantId: "",
+  quantity: "",
   selectedProducts: [],
+  cartProducts: [],
 };
 
 const restaurant = (state = initialState, action) => {
@@ -25,6 +27,10 @@ const restaurant = (state = initialState, action) => {
         }
       }}
       return {...state, selectedProducts: selectedProductsList, restaurantDetails: {...state.restaurantDetails, products: productsList}};
+    case  "REMOVE_PRODUCTS":
+      return {...state, quantity: 0 };
+    case "ADD_TO_CART":
+      return {...state, cartProducts: state.selectedProducts};
     default:
       return state;
   }
