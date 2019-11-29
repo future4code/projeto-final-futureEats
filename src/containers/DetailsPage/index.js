@@ -6,7 +6,7 @@ import styled from "styled-components";
 import {FoodsCard} from "../../components/FoodsCard/FoodsCard"
 import "typeface-roboto";
 import DetailsCard from "../../components/DetailsCard/DetailsCard";
-import {getRestaurantDetails, setSelectedProduct} from "../../actions/restaurant";
+import {addToCart, getRestaurantDetails, removeProducts, setSelectedProduct} from "../../actions/restaurant";
 import {Typography} from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
 import {Popover, Whisper} from "rsuite";
@@ -118,12 +118,16 @@ class DetailsPage extends Component {
     this.setState({
       isQuantityPopoverOpen: false,
     });
+    this.props.addToCart(this.props.selectedProducts);
   };
 
   onChangeQuantitySelection = (quantity) => {
     this.props.setSelectedProduct(this.state.productId, quantity);
   };
 
+  handleRemoveItems = (quantity) => {
+    this.props.removeProducts(quantity, this.state.productId);
+  };
 
   render() {
     const {restaurantDetails} = this.props;
@@ -155,6 +159,8 @@ class DetailsPage extends Component {
               handlePopover={this.handleQuantityPopover}
               selectedQuantity={product.quantity !== undefined ? product.quantity : 0}
               productId={this.props.productId}
+              handleRemoveItens={this.handleRemoveItems}
+
             />
           </Fragment>
         )
@@ -190,12 +196,16 @@ const mapStateToProps = state => ({
   restaurantId: state.restaurant.restaurantId,
   restaurantDetails: state.restaurant.restaurantDetails,
   selectedProducts: state.restaurant.selectedProducts,
+  quantity: state.restaurant.quantity,
+  cartProducts: state.restaurant.cartProducts,
 });
 
 const mapDispatchToProps = dispatch => ({
   getRestaurantDetails: (restaurantId) => dispatch(getRestaurantDetails(restaurantId)),
   goToLogin: () => dispatch(push(routes.loginPage)),
   setSelectedProduct: (productId, quantity) => dispatch(setSelectedProduct(productId, quantity)),
+  removeProducts: (quantity) => dispatch(removeProducts(quantity)),
+  addToCart: (selectedProducts) => dispatch(addToCart(selectedProducts)),
 });
 
 

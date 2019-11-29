@@ -11,6 +11,8 @@ import RestaurantCard from "../../components/RestaurantsCard/RestaurantCard"
 import {setFeed, setRestaurant} from "../../actions/Feed";
 import { routes } from "../Router";
 import { push } from "connected-react-router";
+import restaurant from "../../reducers/restaurant";
+import {getRestaurantDetails, setSelectedRestaurant} from "../../actions/restaurant";
 
 const MainContainer = styled.div`
     height:100vh;
@@ -97,12 +99,13 @@ export function FeedPage(props) {
             setCategoryState(value)
         }
 
-    }
+    };
 
-    const gotoRestaurant = id => {
-        props.setRestaurant(id)
-        props.goRestaurant()
-    }
+    const gotoRestaurant = restaurantId => {
+        props.setSelectedRestaurant(restaurantId);
+        props.getRestaurantDetails(restaurantId);
+        props.goRestaurant();
+     };
 
     return (
         <MainContainer>
@@ -150,15 +153,17 @@ export function FeedPage(props) {
 
 const mapStateToProps = state =>{
     return({
-        listRestaurants: state.setFeed.restaurant
+        listRestaurants: state.setFeed.restaurant,
+        restaurantId: state.restaurant.restaurantId,
     })
-}
+};
 
 const mapDispatchToProps = dispatch => ({
     setFeed: () => dispatch(setFeed()),
     goRestaurant: () => dispatch(push(routes.detailsPage)),
-    setRestaurant: id => dispatch(setRestaurant(id)),
-})
+    setSelectedRestaurant: restaurantId => dispatch(setSelectedRestaurant(restaurantId)),
+    getRestaurantDetails: (restaurantId) => dispatch(getRestaurantDetails(restaurantId)),
+});
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(FeedPage);
