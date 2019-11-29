@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect } from "react";
 import styled from 'styled-components'
 import Roboto from "typeface-roboto"
 import SearchBar from "../../components/SearchBar/SearchBar"
@@ -8,6 +8,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { connect } from "react-redux";
 import RestaurantCard from "../../components/RestaurantsCard/RestaurantCard"
+import {setFeed, setRestaurant} from "../../actions/Feed";
+import { routes } from "../Router";
+import { push } from "connected-react-router";
 
 const MainContainer = styled.div`
     height:100vh;
@@ -69,6 +72,15 @@ const AppBarStyled = styled(AppBar)`
 
 
 export function FeedPage(props) {
+
+    useEffect(() => {
+        props.setFeed()
+    },[]);
+
+    useEffect(() => {
+        
+        setRestaurants(props.listRestaurants)
+    }, [props.listRestaurants]);
     
     const [categoryState, setCategoryState] = useState(1)
     const [restaurants, setRestaurants] = useState(props.listRestaurants)
@@ -87,6 +99,11 @@ export function FeedPage(props) {
 
     }
 
+    const gotoRestaurant = id => {
+        props.setRestaurant(id)
+        props.goRestaurant()
+    }
+
     return (
         <MainContainer>
             <Container>
@@ -96,7 +113,6 @@ export function FeedPage(props) {
                 <SearchBar/>
                 <AppBarStyled position="static" color="default">
                     <Tabs
-                        value={1}
                         onChange={handleChange}
                         indicatorColor="secondary"
                         textColor="primary"
@@ -115,10 +131,11 @@ export function FeedPage(props) {
                     </Tabs>
                 </AppBarStyled>
                 <ContainerList>
-                    {restaurants.map((restaurant) => (<RestaurantCard img={restaurant.logoUrl} 
-                                                                            name={restaurant.name} 
-                                                                            time={restaurant.deliveryTime} 
-                                                                            fret={restaurant.shipping}
+                    {restaurants.map((restaurant) => (<RestaurantCard onClick={() => gotoRestaurant(restaurant.id)} 
+                                                                      img={restaurant.logoUrl} 
+                                                                      name={restaurant.name} 
+                                                                      time={restaurant.deliveryTime} 
+                                                                      fret={restaurant.shipping}
                                                     />)
                                     )
                     }
@@ -130,8 +147,18 @@ export function FeedPage(props) {
     )
 }
 
-const mapStateToProps = state =>({
-    listRestaurants: state.setTools.restaurants
-});
 
-export default connect(mapStateToProps)(FeedPage);
+const mapStateToProps = state =>{
+    return({
+        listRestaurants: state.setFeed.restaurant
+    })
+}
+
+const mapDispatchToProps = dispatch => ({
+    setFeed: () => dispatch(setFeed()),
+    goRestaurant: () => dispatch(push(routes.detailsPage)),
+    setRestaurant: id => dispatch(setRestaurant(id)),
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(FeedPage);
