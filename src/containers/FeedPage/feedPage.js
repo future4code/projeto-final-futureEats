@@ -11,6 +11,7 @@ import RestaurantCard from "../../components/RestaurantsCard/RestaurantCard"
 import {setFeed, setRestaurant} from "../../actions/Feed";
 import { routes } from "../Router";
 import { push } from "connected-react-router";
+import TopAppBar from "../../components/TopAppBar/TopAppBar";
 
 const MainContainer = styled.div`
     height:100vh;
@@ -73,6 +74,8 @@ const AppBarStyled = styled(AppBar)`
 
 export function FeedPage(props) {
 
+    const pageTitle = "FutureEats"
+
     useEffect(() => {
         props.setFeed()
     },[]);
@@ -107,9 +110,7 @@ export function FeedPage(props) {
     return (
         <MainContainer>
             <Container>
-                <Header>
-                    <Title>FutureEats</Title>
-                </Header>
+                <TopAppBar pageTitle={pageTitle} />
                 <SearchBar/>
                 <AppBarStyled position="static" color="default">
                     <Tabs

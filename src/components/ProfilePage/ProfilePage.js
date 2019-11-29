@@ -72,7 +72,7 @@ const StyledAddress = styled.div`
     margin: 8px 16px 0;
 `
 
-const StyledHistoryTitle = styled.div`    
+const StyledHistoryTitle = styled.div`
     margin: 16px 16px 0;
 `
 
