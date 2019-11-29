@@ -3,6 +3,7 @@ import styled from "styled-components";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import Menu from "../Menu"
 
 const user = { //mock pra teste
     name: "Astrodev",
@@ -110,6 +111,7 @@ function ProfilePage(){
             <StyledHistoryTitle>Histórico de Pedidos</StyledHistoryTitle>
             <StyledDivider/>
             <StyledHistory>{order === null? "Você não realizou nenhum pedido" : order}.</StyledHistory>
+            <Menu />
         </Wrapper>
     )
 }
