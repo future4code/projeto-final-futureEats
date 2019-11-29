@@ -10,6 +10,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Menu from "../../components/Menu/Menu"
 
 const StyledContainer = styled.div`
     display:flex;
@@ -278,6 +279,7 @@ export function CartPage(props) {
                 </StyledBoxButton>
 
             </StyledFormControl>
+            <Menu />
         </StyledContainer>
     )
 }
