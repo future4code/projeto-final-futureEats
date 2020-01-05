@@ -139,7 +139,8 @@ const ButtonRemoveStyled = styled.button`
   text-align: center;
   color: #e02020;
   padding: 2.5px 21.5px;
-`
+`;
+
 export const FoodsCard = (props) => {
 
   return (
@@ -175,7 +176,7 @@ export const FoodsCard = (props) => {
                  </TypographyPrice>
                </PriceWrapper>
                {props.selectedQuantity === 0 ?
-               <ButtonAddStyled size={"lg"} onClick={() => props.handleModal(props.product.id, 'lg')}>adicionar</ButtonAddStyled> :
+               <ButtonAddStyled onClick={() => props.handleModal(props.product.id)}>adicionar</ButtonAddStyled> :
                  <ButtonRemoveStyled onClick={() => props.handleRemoveItems}>remover</ButtonRemoveStyled>
                }
              </ButtonWrapper>

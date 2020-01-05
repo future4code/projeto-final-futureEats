@@ -9,13 +9,11 @@ import DetailsCard from "../../components/DetailsCard/DetailsCard";
 import {addToCart, getRestaurantDetails, removeProducts, setSelectedProduct} from "../../actions/restaurant";
 import {Typography} from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
-import {Popover, Whisper} from "rsuite";
 import {QuantityPicker} from "../../components/QuantityPicker";
 import Button from "@material-ui/core/Button";
-import Menu from "../../components/Menu";
 import { Modal } from 'rsuite';
 import Menu from "../../components/Menu"
-import TopAppBar from "../../components/TopAppBar/TopAppBar";
+
 
 
 const DetailsPageContainer = styled.div`
@@ -81,8 +79,7 @@ const QuantityPickerStyled = styled(QuantityPicker)`
 
 const ModalStyled = styled(Modal)`
   && {
- margin: 20px;
- margin-top: 160px;
+ margin: 160px 20px 20px;
  }
 `;
 
@@ -113,16 +110,16 @@ class DetailsPage extends Component {
     return 0;
   }
 
-  handleQuantityPopover = (productId) => {
+  handleQuantityModal = (productId) => {
     this.setState({
-      isQuantityPopoverOpen: true,
+      isModalOpen: true,
       productId
       }
     )
   };
   handleAddToCart = () => {
     this.setState({
-      isQuantityPopoverOpen: false,
+      isModalOpen: false,
     });
     this.props.addToCart(this.props.selectedProducts);
   };
@@ -162,11 +159,10 @@ class DetailsPage extends Component {
             ) : null}
             <FoodsCard
               product={product}
-              handlePopover={this.handleQuantityPopover}
+              handleModal={this.handleQuantityModal}
               selectedQuantity={product.quantity !== undefined ? product.quantity : 0}
               productId={this.props.productId}
-              handleRemoveItens={this.handleRemoveItems}
-
+              handleRemoveItems={this.handleRemoveItems}
             />
           </Fragment>
         )
@@ -179,8 +175,8 @@ class DetailsPage extends Component {
           {allProducts}
         </SectionTitleWrapper>
         <div>
-          <PopoverStyled
-            visible={this.state.isQuantityPopoverOpen}
+          <ModalStyled
+            show={this.state.isModalOpen}
             style={{height: 216, width: 328}}>
             <PopupText>
               Selecione a Quantidade Desejada
@@ -190,7 +186,7 @@ class DetailsPage extends Component {
               placement="top"
             />
             <ButtonStyled onClick={this.handleAddToCart}>ADICIONAR AO CARRINHO</ButtonStyled>
-          </PopoverStyled>
+          </ModalStyled>
         </div>
         <Menu />
       </DetailsPageContainer>
